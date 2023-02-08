@@ -1,0 +1,33 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  /* tạo giao diện phù hợp với kich thước yêu cầu */
+}
+
+.box {
+  display: inline-block;
+  width: 20rem;
+  height: 30rem;
+  background-color: #ffa400;
+  border-color: yellow;
+  padding: 1rem;
+  margin: 0.4rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6em;
+  font-weight: 400;
+}
+
+p {
+  max-width: 300px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  margin: 20px
+}

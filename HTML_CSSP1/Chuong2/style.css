@@ -1,0 +1,231 @@
+/*
+selector{
+  property: value;
+}
+Selectors:
+Tags : p , a, div , main , ....
+Class : .demo , .boy , .hihi,..
+Id : #title , #container , #footer
+
+Property: color , backgroud color
+value : red , blue , green...
+ */
+h1 {
+  color: brown;
+}
+
+ol {
+  color: rgb(0, 0, 0);
+}
+
+p {
+  color: rgba(0, 0, 0, 0.5);
+  /* để làm độ mờ  */
+}
+
+/*
+color : value
+named : red ; orange , blue , green
+hexa : #ffa400, #ff7870, #666666 ->#666 #7cd7cd-> #7cd;
+rgb : rgb(0,0,0) , rgb(255,255,255)
+rgba : rgba(0,0,0,0.5)
+alpha : opacity 0->1 độ mờ của chữ
+ */
+.background {
+  background-color: darkseagreen;
+  min-width: 100px;
+  max-width: 50%;
+  overflow: hidden;
+  /* để ẩnn bớt văn bản bị tràn ra ngoài */
+  /*  ngoài ra còn có height , min-height , max-height  overflow-y : hidden là hiện strull
+  */
+}
+
+.background2 {
+  /* /* background-image: url(https://images.unsplash.com/photo-1660121999601-18cbe99954de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80); */
+  width: 100vw;
+  height: 100vh;
+  /* có thể xài vw và vh thay cho px để hiện thị dễ dàng hơn */
+  /* background-size: cover;
+  background-position: center center;  */
+  /* để hình ảnh ở vị trí trung tâm */
+  /* background-repeat: no-repeat; */
+  /* để hình ảnh không bị lặp lại */
+  /* background-attachment: fixed; */
+  /* để hình ảnh đứng chính giữa không bị dịch chuyển */
+  /* Cách viết rút gọn */
+  background: red url(https://images.unsplash.com/photo-1660121999601-18cbe99954de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) no-repeat center center / cover;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  /* tạo giao diện phù hợp với kich thước yêu cầu */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6em;
+  font-weight: 500;
+  /* font-style  */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+
+}
+
+/* fontsize 100% = 16px 1 em = 1 rem = 16px */
+.em {
+  width: 10em;
+  height: 10em;
+  background-color: cadetblue;
+  font-size: 32px;
+  /*  1 em = 32 px */
+  /*  llà đơn vị sẽ phụ thuộc vào thuộc tính font-size của chính nó hoặc phần tử chứa nó */
+  border-width: 2px;
+  border-style: dashed;
+  border-color: black;
+}
+
+.rem {
+  width: 10rem;
+  height: 10rem;
+  background-color: burlywood;
+  font-size: 32px;
+  /* là đơn vị sẽ phụ thuộc vào thuộc tính font-size của thẻ html */
+  border: 2px solid black;
+  /* outline có tính năng tượng tự như border */
+  /*  border : border-width  border-style: border-color  */
+  /* để chi tiết border thì làm border-top , border-right, border -left, border-bottom */
+  /*  border-style : solid  duong lien dinh lien*/
+  /*  border-style :dotted duong cham cham*/
+  /*  border-style : dashed duong gach ngang*/
+  border-radius: 10px;
+  /* Để chi tiết từng góc ta làm border-top-left-radius hoặc border-top-right-radius tương tự cho bottom*/
+  /* border-radius : 50% là hình tròn */
+}
+
+/*  Cách quy đổi
+100% = 16 px
+?% = 10px => 62,5 %
+ */
+.margin {
+  width: 14em;
+  overflow: hidden;
+  /*  khoảng cách bên trong sử dựng padding bên ngoài là margin */
+  padding: 10px;
+  background-color: brown;
+  margin: 10px auto;
+  /* margin: 10px; */
+  /* 1 gtri -> top = bottom = right = left  = 10 px*/
+  /* margin: 20px 40px; */
+  /* 2 gtri -> top = bottom = 20 px , right =left = 40px */
+  /* margin: 20px 30px 40px; */
+  /* 3 gtri -> top = 20px , right = left = 30px , bottom = 40px
+  margin: 10px 20px 30px 40px; */
+  /* 4 gtri -> top = 10px , right = 20px , bottom =30px , left = 40px */
+  /* Center
+/* margin left :auto
+margin right :auto */
+  /* Note
++ Giá trị margin có thể về âm
++ Giá trị padding chỉ có thể dương */
+}
+
+a {
+  color: bisque;
+  width: 20em;
+  height: 10em;
+  padding: 1em;
+  /* background-color: black; */
+  display: inline-block;
+  /* the display de chuyen the inline sang block de co the su dung cac thuoc tinh wight va height */
+  /*  ngoai ra display : none se lm bien mat the tren man hinh */
+}
+
+.boxed {
+  width: 10em;
+  height: 10rem;
+  border: 5px solid black;
+  padding: 1rem;
+  background-color: yellow;
+  box-sizing: content-box;
+  /*content-box
+   width = width + padding-left + padding -right + border-left + border-right
+  height cũng tương tự*/
+  box-sizing: border-box;
+  /* border-box
+  width = width - padding-left - padding-rifgt - border- left - bored-right */
+
+}
+
+.text-wrap {
+  text-align: center;
+}
+
+.text {
+  /* khoảng cách giữa các chữ */
+  line-height: 1.5;
+  text-align: left;
+  text-align: center;
+  text-align: justify;
+  max-width: 300px;
+  /* Khoảng cách giữa các kí tự */
+  letter-spacing: 1px;
+  /* Khoảng cách giữa các từ */
+  word-spacing: 2px;
+  /* hien thi dau 3 cham tren 1 hang */
+  /* white-space hien thi tren 1 hang */
+  /* white-space: nowrap; */
+  /* overflow: hidden;
+  text-overflow: ellipsis; */
+  /* hien thi dau 3 cham toi hang thu 3 */
+  /* display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis; */
+  /* rớt từ không ý nghĩa thì break-all rớt từ có ý nghĩa thì break-word */
+  word-break: break-all;
+  word-break: break-word;
+  display: inline-block;
+}
+
+/*  Để đưa thẻ inline ra giữa cần một thẻ div bọc lai và text-align nó */
+.image-wrap {
+  text-align: center;
+}
+
+.image {
+  width: 20rem;
+  height: 20em;
+  object-fit: cover;
+  object-position: bottom;
+  /* thẻ inline */
+  display: inline-block;
+  margin: 2rem;
+  border-radius: 40%;
+}
+
+.pseudo {
+  color: rgb(0, 0, 0);
+  font-size: 1.6rem;
+}
+
+/* Khi rê chuột vào thì đổi màu */
+/* .pseudo:hover {
+  color: orange;
+} */
+/* Khi nhấn vào đổi màu */
+/* .pseudo:active {
+  color: red;
+} */
+/* Khi nhấn vào rồi */
+.pseudo:visited {
+  color: orange;
+}
