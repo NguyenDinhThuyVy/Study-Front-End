@@ -1,0 +1,83 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6em;
+  font-weight: 500;
+  /* font-style  */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/*  background gardient */
+.boxed {
+  width: 20rem;
+  height: 20rem;
+  background-image: linear-gradient(to right bottom, #00aefd, #ffa400);
+  /* Để hiện thij con trỏ */
+  cursor: pointer;
+  /* vẫn chiếm diện tích , có thể nhấn vô được  với  giá trị 0 là trong suốt */
+  opacity: 0;
+  /* vẫn chiếm diện tích , không thể nhấn vô được  */
+  visibility: hidden;
+  /* không chiếm diện tích ,  không thể nhấn vô được  */
+  display: none;
+  /*
+  direction : to right ( tu trai sang phai) , to left ( tu phai sang trai ) , to bottom ( tu tren xuong duoi ) , to top ( tu duoi len tren)
+  to right bottom , to left bottom , to lefy top , to right top
+  mieu ta ve do : 120deg;
+  color1
+  color2
+   */
+}
+
+/* text gardient */
+.title {
+  font-weight: bold;
+  font-size: 3rem;
+  display: inline-block;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  color: transparent;
+  background-image: linear-gradient(to right bottom, #00aefd, #ffa400);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* Neu ma trinh duyet khong ho tro thi them not o phia sau supports */
+/* @supports (-webkit-background-clip: text) {
+  .title{
+    /* Mau chu trong suot */
+/* color: transparent;
+background-image: linear-gradient(to right bottom, #00aefd, #ffa400);
+-webkit-background-clip: text;
+background-clip: text;
+}
+} */
+
+/* .background {
+  width: 100vw;
+  height: 80vh;
+  background-image: linear-gradient(to right bottom, hwb(199 0% 1% / 0.77), rgba(255, 166, 0, 0.748)), url(https://plus.unsplash.com/premium_photo-1674273913201-cfb203267df5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
+  background-size: cover;
+} */
+.shadow {
+  width: 20rem;
+  height: 20rem;
+  background-image: linear-gradient(to right, #FFC0CB, #DDA0DD);
+  margin: 5rem auto;
+  box-shadow: 5px 0px 10px 5px #BA55D3;
+  /* box-shadow: x y blur( độ mờ)  scale color ; */
+}
+
+.shadow-text {
+  font-size: 4rem;
+  font-weight: bold;
+  /* text-sahdow chỉ có 3 giá trị truyền vào và không có scale */
+  text-shadow: 5px 0px 10px #BA55D3;
+}
