@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #C71585;
+  --secondary-color: #DDA0DD;
+
+}
+
 html {
   font-size: 62.5%;
 }
@@ -18,7 +24,7 @@ img {
 .boxed {
   width: 20rem;
   height: 20rem;
-  background-image: linear-gradient(to right bottom, #00aefd, #ffa400);
+  background-image: linear-gradient(to right bottom, var(--primary-color), var(--secondary-color));
   /* Để hiện thij con trỏ */
   cursor: pointer;
   /* vẫn chiếm diện tích , có thể nhấn vô được  với  giá trị 0 là trong suốt */
@@ -44,7 +50,7 @@ img {
   margin-top: 2rem;
   margin-left: 2rem;
   color: transparent;
-  background-image: linear-gradient(to right bottom, #00aefd, #ffa400);
+  background-image: linear-gradient(to right bottom, var(--primary-color), var(--secondary-color));
   -webkit-background-clip: text;
   background-clip: text;
 }
@@ -81,3 +87,86 @@ background-clip: text;
   /* text-sahdow chỉ có 3 giá trị truyền vào và không có scale */
   text-shadow: 5px 0px 10px #BA55D3;
 }
+
+#title {
+  color: #DDA0DD;
+}
+
+.title1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: brown
+}
+
+h2 {
+  color: chocolate;
+}
+
+/*  Thứ tự ưu tiên trong css độ ưu tiên chạy từ dưới lên trên Tags <  Class < ID  < Inline < ! important */
+ul {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+/* Css child selectors của thẻ ul ol với thứ tự từ 1 đến n , 1 sẽ là first-child , cuối sẽ là last-child còn các thứ tự khác là nth-child(n) */
+li:first-child {
+  margin-left: 2rem;
+  color: transparent;
+  background-image: linear-gradient(to right bottom, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+li:last-child {
+  margin: 4rem;
+  color: transparent;
+  background-image: linear-gradient(to right top, MediumOrchid, MediumVioletRed);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+li:nth-child(2) {
+  color: aquamarine
+}
+
+/* Nếu không biết số lượng thì sử dụng nth-last-child để xài cho cái kế cuối vì này là đếm từ dưới lên ngược lại với nth-child */
+li:nth-last-child(2) {
+  color: #C71585;
+}
+
+/* Chọn tất cả các phần tử trừ cái đầu tiên hoặc trừ cái cuối cùng*/
+li:not(:first-child) {
+  color: #FFC0CB;
+}
+
+/* Chọn các phần tử theo chẳn(even) hoặc lẻ (odd)*/
+li:nth-child(odd) {
+  color: coral;
+}
+
+/* Chọn các phần tử theo công thức xn+k là k là bước các phần tử mình muốn đổi màu với n chạy từ 0 đến hết */
+li:nth-child(3n+2) {
+  color: darksalmon;
+}
+
+/* -Nếu có thêm thẻ p hoặc các thẻ trước thẻ ki thay vì dùng first-child thì ta thành first-of-type nó sẽ lấy theo loại
+- Để code thẻ trong li không cùng cấp thì phải trỏ tới li trước mới tơis thẻ  vd : li:first-child span {*/
+
+/* Suwr dungj combinators trong CSS */
+/* + Sử dụng cho class phía sau thẻ mình muốn css */
+h3+.title {
+  color: #C71585;
+}
+
+/* ~ sử dụng đến thẻ mình muốn css phải phía sau */
+h3~.title2 {
+  color: chocolate;
+}
+
+/* Slector nâng cao */
+/* css những thẻ href bắt đầu bằng chữ https */
+a[href^="https"] {
+  color: firebrick;
+}
+
+/* css những thẻ href */
