@@ -6,6 +6,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 1.6em;
   font-weight: 500;
+  height: 2000px;
   /* font-style  */
 }
 
@@ -18,4 +19,97 @@ img {
   width: 10rem;
   height: 10rem;
   background-color: lightpink;
+  /* transform : scale viết tắt của scaleX và scaleY */
+  /* Cách 1 */
+  /* transform: scaleX(2) scaleY(2); */
+  /* Cách 2 scale có thể giảm xuống 0 < */
+  /* transform: scale(2, 2); */
+  /* Muốn xoay thì sử dụng rotate */
+  /* transform: rotate(45deg); */
+  /* transform : translate translateX translateY  nhằm để di chuyển như margin mà margin là duy chuyển luôn còn tranfrom chi duy chuyển bên ngoài bân trong thì vẫn tại vị trí cũ*/
+  /* transform: translateX(1rem); */
+  /* nếu khi chi biết độ rộng và chiều cao thì ta sử dụng % trong transfrom */
+  /* transform: translateX(100%) translateY(100%); */
+  /* Viết gọp lại */
+  /* transform: scale(1) rotate(45deg) translate(100%, 50%); */
+  /* ngoài ra transfrom còn có skew */
+  /* transform: skewX(-30deg); */
+  /* Thay vì sử dụng transfrom : scale ta còn có thể sử dụng position:relative với các thuộc tính top , bottom , right , left  */
+}
+
+/* Master thuoc tinh position absolute */
+/* .wrap {
+  width: 100%;
+  height: 50rem;
+  background-color: chocolate;
+  position: relative;
+} */
+
+/* .boxed { */
+/* absolute là nhận ra cái boxed trên không chiếm khoảng trống nữa và tràn lên */
+/* position: absolute; */
+/* top: 10px;
+  left: 10px; */
+/* center cả chiều ngang lẫn chiều dọc */
+/* left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+/* center chiều ngang */
+/* left: 50%;
+  transform: translate(-50%, -50%); */
+/* center chiều dọc */
+/* top: 50%;
+  transform: translate(-50%, -50%); */
+/* Muốn thẻ boxed phủ hết cái khung wrap thì làm sao overlay all*/
+/* Cách 1 */
+/* top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; */
+/* Cách 2 */
+/* top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto; */
+/* overlay theo chiều ngang */
+/* width: auto; */
+/* có thể sử dụng width 100% thay cho width auto khi đó không cần sử dụng right 0 */
+/* right: 0;
+  left: 0;
+  top: 0; */
+/*  overlay theo chiều dọc*/
+/* height: auto;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+} */
+
+/* Z-index càng lớn thì càng nằm ở phía trên , z-index phải luôn đi theo position:relative */
+/* p {
+  color: aliceblue;
+  position: relative;
+  z-index: 1;
+} */
+
+/* position fixed */
+/* Không sử dụng transfrom trong các phần tủ cha chứa phần tử fixed */
+.wrapper {
+  transform: translate(50px, 50px);
+}
+
+.header {
+  height: 10rem;
+  background-color: cadetblue;
+  /* fixed cố định khuyến cáo ko nên đi cùng với transform */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+body {
+  transform: translate(30px, 30px);
+  padding-top: 10rem;
 }
