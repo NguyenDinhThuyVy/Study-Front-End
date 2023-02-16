@@ -169,4 +169,63 @@ a[href^="https"] {
   color: firebrick;
 }
 
-/* css những thẻ href */
+/* css những thẻ href kết thúc bằng chữ vn */
+a[href$=".vn"] {
+  color: green;
+}
+
+/* css những thẻ href có chứa www */
+a[href*="www"] {
+  color: #BA55D3;
+}
+
+div[data-title="value"] {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  color: darkolivegreen;
+}
+
+/* Muốn chữ đầu tiên trong đoạn văn bản của thẻ p to ra thì */
+p::first-letter {
+  color: #C71585;
+  margin-top: 2rem;
+  font-size: 4rem;
+  font-weight: bold;
+
+}
+
+/* Muốn dòng đầu tiên trong đoạn văn bản của thẻ p to ra thì */
+p::first-line {
+  color: #DDA0DD;
+}
+
+/* Thuộc tính transition cơ bản*/
+.boxed2 {
+  width: 20rem;
+  height: 20rem;
+  /* display: none; */
+  opacity: 0;
+  background-color: indianred;
+  /* transition: background-color 2s linear; */
+  /* transition: background-color 0.2s ease, color 0.2s ease; */
+  transition: all 0.2s linear;
+  /* Muoốn nó delay thì sử dụng transition-delay */
+  /* transition-delay: 2s; */
+  /* transition: property timer easing*/
+}
+
+/* Khi rê chuột vào màu sắc sẽ đổi */
+.wrap {
+  width: 20rem;
+  height: 20rem;
+}
+
+/* .wrap:hover .boxed2 {
+  display: inline-block;
+} */
+
+.boxed2:hover {
+  opacity: 1;
+  background-color: #C71585;
+  color: #DDA0DD;
+}
