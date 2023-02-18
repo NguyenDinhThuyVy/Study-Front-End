@@ -6,7 +6,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 1.6em;
   font-weight: 500;
-  height: 2000px;
+  /* height: 2000px; */
   /* font-style  */
 }
 
@@ -99,17 +99,152 @@ img {
   transform: translate(50px, 50px);
 }
 
-.header {
-  height: 10rem;
-  background-color: cadetblue;
-  /* fixed cố định khuyến cáo ko nên đi cùng với transform */
+/* .header {
+  height: 10rem; */
+/* background-color: cadetblue; */
+/* fixed cố định khuyến cáo ko nên đi cùng với transform */
+/* position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+} */
+
+/*
+body {
+  transform: translate(30px, 30px);
+  padding-top: 10rem;
+} */
+
+/* Thực hành với thuộc tính position1 */
+body {
+  background-color: aliceblue;
+  width: 100%;
+  height: 100vh;
+}
+
+.modal {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.125);
 }
 
-body {
-  transform: translate(30px, 30px);
-  padding-top: 10rem;
+.modal__content {
+  width: 80%;
+  height: 80%;
+  background-color: beige;
+  position: absolute;
+  padding: 5rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
+
+/* Thực hành với thuộc tính position2 */
+.video {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #c0ffe3, #DDA0DD);
+  box-shadow: 10px 0px 20px 10px #d35555;
+}
+
+.video__image {
+  width: 90%;
+  height: 80%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10%;
+}
+
+.video__icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: aliceblue;
+}
+
+/* Thực hành với position3 */
+.card {
+  width: 20rem;
+  height: 60rem;
+  background-image: linear-gradient(to right bottom, #DDA0DD, #c0ffe3);
+  position: relative;
+  border: 2px solid rgba(20, 107, 220, 0.268);
+  box-shadow: 5px 0px 10px 5px #559cd3;
+}
+
+.sale {
+  font-size: 1.2rem;
+  padding: 5px;
+  color: aliceblue;
+  background-color: burlywood;
+  border-radius: 1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.button {
+  width: 20%;
+  height: 5%;
+  position: absolute;
+  color: #d35555;
+  background-color: gold;
+  border-radius: 1rem;
+  padding: 5px;
+  text-align: center;
+  left: 50%;
+  top: 95%;
+  transform: translate(-50%, -50%);
+}
+
+/* Thực hành position4 */
+.bar {
+  width: 30rem;
+  height: 1rem;
+  background-color: #ccc;
+  margin: 5rem auto 0;
+  border-radius: 2rem;
+  position: relative;
+}
+
+.bar-progress {
+  height: 100%;
+  width: 50%;
+  /* inherit là kế thừa lại thăng cha */
+  border-radius: inherit;
+  background-color: rgb(5, 139, 5);
+}
+
+.bar-circle {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: rgb(5, 139, 5);
+  border-radius: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Hiểu và nắm tốt pseudo :before và after khó nhằn trong css */
+/*  Ở before hoặc after thì bắt buộc phải có content thì mới chạy được*/
+.title:before {
+  content: "Hello tui ten la ";
+}
+
+.title:after {
+  content: " Tam biet nha ";
+}
+
+/* Thực hành với pseudo before và after #1 */
