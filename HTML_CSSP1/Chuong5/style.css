@@ -1,0 +1,75 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6em;
+  font-weight: 500;
+  /* height: 2000px; */
+  /* font-style  */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Flexbox là gì ? Giới thiệu về Flexbox */
+/* Flexbox toàn tập #1 */
+.list {
+  margin-top: 5rem;
+  display: flex;
+  /*  Đây là giá trị mặt định theo chiều ngang flex-direction: row; */
+  /* flex-direction: row; */
+  /* khi muốn xài column thì phải xét chiều cao cho hắn là height */
+  /* flex-direction: column; */
+  /* Muốn hiện thị giá trị ngược lại ta sử dụng flex-direction : row-reverse */
+  /* flex-direction: row-reverse; */
+  /* Trong flex-direction là có align-items: stretch này sẽ làm cho kích thước các phần tử có độ dài bằng với phần tử dài nhất và bằng nhau */
+  /* align-items: stretch; */
+  /* Để canh phần phía trên đầu bằng nhau sử dụng align-items: flex-start */
+  /* align-items: flex-start; */
+  /* Để canh phần dưới đít bằng nhau sử dụng align-items: flex-end */
+  /* align-items: flex-end; */
+  /* Để canh giữa các phần tử với nhau sử dụng align-items: center*/
+  /* align-items: center; */
+  /* Để canh theo đít chữ của dòng đầu tiên ta sử dụng align-items: baseline */
+  /* align-items: baseline; */
+  /* Mặc định các phần tử ban đầu ở trạng thía justify-content: flex-start là nằm phía bên trái*/
+  /* justify-content: flex-start; */
+  /* Để duy chuyển các phần từ sang bên phả ta sử dụng justify-content: flex-end */
+  /* justify-content: flex-end; */
+  /* Để duy chuyển các phần từ nằm chính giữa ta sử dụng justify-content: flex-end */
+  /* justify-content: center; */
+  /* Muốn cho các phần tử một cái nằm đầu, một cái nằm cuối , một cái nằm giữa ta sử dụng justify-content: space-between để tạo khoảng cách */
+  /* justify-content: space-between; */
+  /* Muốn tạo khoảng cách xung quanh các phần tử ta sử dụng justify-content: space-around */
+  /* justify-content: space-around; */
+  /* Muốn tạo khoảng cách xung quanh các phần tử mà các khoảng cách này đều nhau ta sử dụng justify-content: space-evenly*/
+  /* justify-content: space-evenly; */
+  /* Trong flexbox có flex-wrap : nowrap mặc định nên làm cho các phần tử ko rớt xuống hàng */
+  /* flex-wrap: nowrap; */
+  /* Nếu muốn rớt hàng có thể sử dụng flex-wrap:wrap */
+  /* Có thể viết tắt thành flex-flow : row nowrap */
+
+}
+
+.list__item {
+  padding: 1rem;
+  background-color: orange;
+  margin: 5px;
+  /* width: 50%; */
+}
+
+/* .list__item:first-child {
+  font-size: 5rem;
+  align-self: flex-start;
+} */
+
+/* .list__item:last-child { */
+/* Canh cho phần tử con hay nói cách khác là canh cho chính mình ta sử dụng align-self:flex-end */
+/* align-self: flex-end;
+} */
+
+/* Flexbox toàn tập #2 */

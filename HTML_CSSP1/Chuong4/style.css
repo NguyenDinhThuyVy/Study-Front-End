@@ -239,12 +239,256 @@ body {
 
 /* Hiểu và nắm tốt pseudo :before và after khó nhằn trong css */
 /*  Ở before hoặc after thì bắt buộc phải có content thì mới chạy được*/
-.title:before {
+/* .title:before {
   content: "Hello tui ten la ";
 }
 
 .title:after {
   content: " Tam biet nha ";
-}
+} */
 
 /* Thực hành với pseudo before và after #1 */
+.title {
+  position: relative;
+  padding: 2rem;
+  margin: 5rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/*  xài after trong trường hợp này cũng được do không có giá trị content nhập vào và sự điều chỉnh chủ yếu lf phụ thuộc vào top left và transfrom do có sdung position*/
+.title:before {
+  content: "";
+  height: 1rem;
+  width: 1rem;
+  border-radius: 1rem;
+  background-color: tomato;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+/* Thực hành với pseudo before và after #2 */
+.line {
+  text-align: center;
+  position: relative;
+  margin: 5rem;
+}
+
+
+.line:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: orange;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.line-text {
+  display: inline-block;
+  background-color: aliceblue;
+  padding: 10px;
+  position: relative;
+  z-index: 2;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #d35555;
+}
+
+/* Thực hành với pusedo before and after #3 */
+.icon {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 4px;
+  color: chocolate;
+  position: relative;
+  margin: 5rem auto;
+}
+
+.icon:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  /* currentcolor lấy màu theo màu cha chứa nó */
+  background-color: currentColor;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.25;
+}
+
+.icon-user {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+/* Thực hành với pseudo before and after #4 */
+.effect {
+  /* ẩn dấu gạch bên dưới thẻ a */
+  text-decoration: none;
+  display: inline-block;
+  padding: 2rem;
+  text-align: center;
+  background-color: #dda0dd34;
+  border: 1px solid orange;
+  margin: 5rem;
+  transition: color 0.25s linear;
+  color: #368fd3;
+  position: relative;
+  z-index: 1;
+}
+
+.effect:before {
+  content: "";
+  height: 100%;
+  width: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(222, 167, 96);
+  z-index: -1;
+  transition: width 0.25s linear;
+}
+
+.effect:hover:before {
+  width: 100%;
+}
+
+.effect:hover {
+  color: #d35555;
+}
+
+/* Tại sao before và after quan trọng */
+.boxed1 {
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+}
+
+.boxed1:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #559cd3;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+/* Animation là gì ? Tìm hiểu và nắm kiến thức về animation cơ bản */
+.boxed2 {
+  width: 5rem;
+  height: 5rem;
+  background-color: #d35555;
+  /* transform: translateX(10rem); */
+  /* Tên animayion muốn sử dụng animation-name */
+  /* animation-name: move; */
+  /* Thời gian chạy của animation là sử dụng animation-duration */
+  /* animation-duration: 2s; */
+  /* Muốn cho animation chạy từ from đến to rồi chạy về ta sử dụng animation-direction:alternate */
+  /* animation-direction: alternate; */
+  /* Thể hiện số lần chạy của animation nếu sử dụng infinite sẽ chạy vô tận*/
+  /* animation-iteration-count: 1; */
+  /* Tạo kiểu chạy cho animation */
+  /* animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+  /* điểm cuối chuyển động trong animation */
+  /* forwards là đứng tại điểm đó luôn còn  backwards thì về lại vị trí ban đầu*/
+  /* animation-fill-mode: backwards; */
+  /* viết rút gọn */
+  animation: move 2s forwards infinite alternate cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s;
+  /* có animation delay và sẽ được viết ở cuối dong rút gọn */
+}
+
+@keyframes move {
+
+  /* from -> to */
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(20rem);
+  }
+}
+
+/* Thực hành với animation #1*/
+.circle-loading {
+  width: 5rem;
+  height: 5rem;
+  background-color: burlywood;
+  margin: 5rem auto;
+  border-radius: 50%;
+  /* transform: scale(2);
+  opacity: 0.25; */
+  position: relative;
+}
+
+.circle-loading::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  border-radius: inherit;
+  animation: fade 1s forwards infinite linear;
+}
+
+@keyframes fade {
+  /* from {
+    transform: scale(1);
+    opacity: 1;
+  } */
+
+  to {
+    transform: scale(2);
+    opacity: 0.25;
+  }
+}
+
+/* Thực hành với animation #2 */
+.circles {
+  text-align: center;
+  /* transfrom : rotate(200deg)
+  transfrom:rotate(160deg)
+  transfrom:rotate(180deg) */
+  animation: loading 1s infinite;
+}
+
+@keyframes loading {
+  50% {
+    transform: rotate(200deg);
+  }
+
+  75% {
+    transform: rotate(160deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.cricles-item {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 3rem;
+  border: 2px solid palevioletred;
+  display: inline-block;
+  margin: 0 0.3rem 0;
+}
+
+.cricles-item:first-child {
+  border-color: palevioletred;
+}
