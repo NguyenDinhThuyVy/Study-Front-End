@@ -492,3 +492,5 @@ body {
 .cricles-item:first-child {
   border-color: palevioletred;
 }
+
+/* Các thủ thuật chia layout hay mà bạn nên biết khi dùng flexbox */

@@ -2,10 +2,18 @@ html {
   font-size: 62.5%;
 }
 
+:root {
+  --primary-color: #C71585;
+  --secondary-color: #DDA0DD;
+  --spacing: 3rem;
+}
+
+
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1.6em;
   font-weight: 500;
+  width: 100%;
   /* height: 2000px; */
   /* font-style  */
 }
@@ -17,50 +25,50 @@ img {
 
 /* Flexbox là gì ? Giới thiệu về Flexbox */
 /* Flexbox toàn tập #1 */
-.list {
+/* .list {
   margin-top: 5rem;
-  display: flex;
-  /*  Đây là giá trị mặt định theo chiều ngang flex-direction: row; */
-  /* flex-direction: row; */
-  /* khi muốn xài column thì phải xét chiều cao cho hắn là height */
-  /* flex-direction: column; */
-  /* Muốn hiện thị giá trị ngược lại ta sử dụng flex-direction : row-reverse */
-  /* flex-direction: row-reverse; */
-  /* Trong flex-direction là có align-items: stretch này sẽ làm cho kích thước các phần tử có độ dài bằng với phần tử dài nhất và bằng nhau */
-  /* align-items: stretch; */
-  /* Để canh phần phía trên đầu bằng nhau sử dụng align-items: flex-start */
-  /* align-items: flex-start; */
-  /* Để canh phần dưới đít bằng nhau sử dụng align-items: flex-end */
-  /* align-items: flex-end; */
-  /* Để canh giữa các phần tử với nhau sử dụng align-items: center*/
-  /* align-items: center; */
-  /* Để canh theo đít chữ của dòng đầu tiên ta sử dụng align-items: baseline */
-  /* align-items: baseline; */
-  /* Mặc định các phần tử ban đầu ở trạng thía justify-content: flex-start là nằm phía bên trái*/
-  /* justify-content: flex-start; */
-  /* Để duy chuyển các phần từ sang bên phả ta sử dụng justify-content: flex-end */
-  /* justify-content: flex-end; */
-  /* Để duy chuyển các phần từ nằm chính giữa ta sử dụng justify-content: flex-end */
-  /* justify-content: center; */
-  /* Muốn cho các phần tử một cái nằm đầu, một cái nằm cuối , một cái nằm giữa ta sử dụng justify-content: space-between để tạo khoảng cách */
-  /* justify-content: space-between; */
-  /* Muốn tạo khoảng cách xung quanh các phần tử ta sử dụng justify-content: space-around */
-  /* justify-content: space-around; */
-  /* Muốn tạo khoảng cách xung quanh các phần tử mà các khoảng cách này đều nhau ta sử dụng justify-content: space-evenly*/
-  /* justify-content: space-evenly; */
-  /* Trong flexbox có flex-wrap : nowrap mặc định nên làm cho các phần tử ko rớt xuống hàng */
-  /* flex-wrap: nowrap; */
-  /* Nếu muốn rớt hàng có thể sử dụng flex-wrap:wrap */
-  /* Có thể viết tắt thành flex-flow : row nowrap */
+  display: flex; */
+/*  Đây là giá trị mặt định theo chiều ngang flex-direction: row; */
+/* flex-direction: row; */
+/* khi muốn xài column thì phải xét chiều cao cho hắn là height */
+/* flex-direction: column; */
+/* Muốn hiện thị giá trị ngược lại ta sử dụng flex-direction : row-reverse */
+/* flex-direction: row-reverse; */
+/* Trong flex-direction là có align-items: stretch này sẽ làm cho kích thước các phần tử có độ dài bằng với phần tử dài nhất và bằng nhau */
+/* align-items: stretch; */
+/* Để canh phần phía trên đầu bằng nhau sử dụng align-items: flex-start */
+/* align-items: flex-start; */
+/* Để canh phần dưới đít bằng nhau sử dụng align-items: flex-end */
+/* align-items: flex-end; */
+/* Để canh giữa các phần tử với nhau sử dụng align-items: center*/
+/* align-items: center; */
+/* Để canh theo đít chữ của dòng đầu tiên ta sử dụng align-items: baseline */
+/* align-items: baseline; */
+/* Mặc định các phần tử ban đầu ở trạng thía justify-content: flex-start là nằm phía bên trái*/
+/* justify-content: flex-start; */
+/* Để duy chuyển các phần từ sang bên phả ta sử dụng justify-content: flex-end */
+/* justify-content: flex-end; */
+/* Để duy chuyển các phần từ nằm chính giữa ta sử dụng justify-content: flex-end */
+/* justify-content: center; */
+/* Muốn cho các phần tử một cái nằm đầu, một cái nằm cuối , một cái nằm giữa ta sử dụng justify-content: space-between để tạo khoảng cách */
+/* justify-content: space-between; */
+/* Muốn tạo khoảng cách xung quanh các phần tử ta sử dụng justify-content: space-around */
+/* justify-content: space-around; */
+/* Muốn tạo khoảng cách xung quanh các phần tử mà các khoảng cách này đều nhau ta sử dụng justify-content: space-evenly*/
+/* justify-content: space-evenly; */
+/* Trong flexbox có flex-wrap : nowrap mặc định nên làm cho các phần tử ko rớt xuống hàng */
+/* flex-wrap: nowrap; */
+/* Nếu muốn rớt hàng có thể sử dụng flex-wrap:wrap */
+/* Có thể viết tắt thành flex-flow : row nowrap */
 
-}
+/* } */
 
-.list__item {
+/* .list__item {
   padding: 1rem;
   background-color: orange;
-  margin: 5px;
-  /* width: 50%; */
-}
+  margin: 5px; */
+/* width: 50%; */
+/* } */
 
 /* .list__item:first-child {
   font-size: 5rem;
@@ -73,3 +81,107 @@ img {
 } */
 
 /* Flexbox toàn tập #2 */
+/* Flexbox toàn tập #3 */
+/* .list1 {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column; */
+/* flex-direction: column-reverse; */
+/* } */
+
+/* .list__item1 {
+  padding: 1rem;
+  background-color: orange;
+  margin: 5px; */
+/* order là thứ các item */
+/* order: 0;
+} */
+
+/* .list__item1:nth-child(2) {
+  order: 1;
+}
+
+.list__item1:nth-child(3) {
+  order: 3;
+}
+
+.list__item1:nth-child(4) {
+  order: 2;
+} */
+
+/*  Căng chỉnh giữa với flexbox tương tự như position:relative*/
+/* .layout {
+  display: flex;
+
+} */
+
+/* .icon {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 1rem;
+  background-color: cadetblue;
+  color: aliceblue; */
+
+/* display: flex; */
+/* Căng giữa theo chiều dọc */
+/* align-items: center; */
+/* Căng giữa theo chiều ngang */
+/* justify-content: center;
+} */
+
+/* .layout p { */
+/* calc là hàm tính toán cơ bản trong css */
+/* 100% là độ rộng của thằng cha chứa nó */
+/* width: calc(100% - 10rem);
+  margin: 2rem;
+} */
+
+/* Các thủ thuật chia layout hay mà bạn nên biết khi dùng flexbox */
+.image__list {
+  display: flex;
+  justify-content: space-between;
+  /* margin-left: -3rem; */
+  margin: 5rem 0 0 calc(-1 * var(--spacing));
+  /* Để cho các phần tử rớt xuống hàng */
+  flex-wrap: wrap;
+}
+
+.image_item {
+  /* width:25% */
+  width: calc((100% / 3) - var(--spacing));
+  margin-left: var(--spacing);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Cách vẽ tam giá bằng Css và cách nó hoạt đọng  */
+.boxed {
+  /* width: 8rem;
+  height: 8rem; */
+  /* background-image: linear-gradient(to right bottom, var(--primary-color), var(--secondary-color)); */
+  margin: 5rem auto;
+  width: 0;
+  height: 0;
+  /* Cách tạo hình tam giác từ trên xuống */
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid lightsalmon;
+  /* Cách tạo hình tam giác từ dưới lên*/
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid lightgreen;
+  /* Cách tạo hình tam giác trái qua*/
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 100px solid lightgreen;
+  /* Cách tạo hình tam giác phải qua*/
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-right: 100px solid lightgreen;
+}
