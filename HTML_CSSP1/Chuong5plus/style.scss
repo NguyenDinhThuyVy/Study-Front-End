@@ -1,3 +1,172 @@
+// Biến sử dụng trong scss là có dấu $ ở phía trước
+$primary-color:#DDA0DD;
+$bule-color:#358BE5;
 html {
   font-size: 62.5%;
+}
+body{
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6em;
+  font-weight: 500;
+  width: 100%;
+  background-color:#E4E3E5;
+}
+// Tìm hiểu và nắm cơ bản kiến thức về Sass cho người mới
+p{
+  color:$primary-color ;
+}
+// ở css nếu muốn gọi môtj class thì ta phải css .class muốn thay đổi khi rê chuột vào thì .class:hover... thì lau ở sass ta có thể code nhanh hơn bằng dấu & có nghĩa là gạch nối từ
+.header{
+  &-top{
+    color: blueviolet;
+    &:hover{
+      color: cadetblue;
+    }
+  }
+  &-content{
+    font-size: 10rem;
+    color:chocolate ;
+    &::before{
+      content: "look this is a beautiful girl";
+      color: aquamarine;
+      font-size: 8rem;
+    }
+  }
+}
+// Sử dụng mixin để tái sử dụng đoạn code nhiều lần
+// Cấu trúc @mixin mixinName(){}
+// $height:$width có nghĩa là khi truyền 1 tham số width vào thì height bằng width
+@mixin size($width , $height:$width){
+  width: $width;
+  height:$height;
+}
+@mixin bgc($color :orange){
+  background-color: $color;
+}
+@mixin absolute($direction: "left"){
+  position: absolute;
+  @if $direction == "both"{
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  }
+  @if $direction == "left"{
+    left:50%;
+    transform: translateX(-50%);
+  }
+  @if $direction == "top"{
+    top:50%;
+    transform: translateY(-50%);
+  }
+}
+.boxed{
+  // width: 10rem;
+  // height: 10rem;
+  // Sử dụng mixin bằng cách @include mixinName(truyền tham số vào)
+  @include size(10rem);
+  // background-color:coral;
+  @include bgc(green);
+}
+.container{
+  width: 100%;
+  height: 40rem;
+  background-color: rgba(165, 42, 42, 0.36);
+  position: relative;
+  .boxing{
+    @include size(10rem , 20rem);
+    @include bgc(white);
+    // position: absolute;
+    // top:50%;
+    // left:50%;
+    // transform: translate(-50%,-50%);
+    @include absolute("top");
+  }
+}
+// Các lỗi hay gặp khi cài đặt Sass và cách khắc phục
+// Thực hành code giao diện Dropdown #1
+.dropdown{
+  width: 40rem;
+  margin: 4rem auto 0;
+  position: relative;
+  &__select{
+    padding: 2rem 2.5rem 2rem 4rem;
+   background-color:$bule-color;
+   color: white;
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+  //  không sử dụng  justify-content:space-between  trong trường hợp này vì nó sẽ chia đều 3 phần tử
+  }
+  &__text{
+    margin-left: 3.5rem;
+  }
+  &__caret{
+    // Trong flexbox khi có 3 phần tử muốn phần tử cuối cùng nằm về phía bên trái thì sử dụng margin-left : auto;
+    margin-left: auto;
+  }
+  &__item{
+    padding: 2rem 2.5rem 2rem 4rem;
+   background-color:white;
+   display: flex;
+   align-items: center;
+   color:#A1A0A9;
+   transition: all 0.2s linear;
+  //  khi chọn vào có hình bàn tay để người dùng biết là có thể bấm vào được sử dụng   cursor: pointer;
+  cursor: pointer;
+  border-left: 4px solid transparent;
+  &:not(:last-child){
+    border-bottom: 1px solid #eee;
+  }
+   &:hover{
+    color: #54526A;
+    border-left-color:  $bule-color ;
+   }
+  }
+  &__list{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    margin-top: 3rem;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 0 rgb(black , 0.1);
+   opacity: 0;
+   visibility: hidden;
+    background-color: white;
+    transition: all 0.25s linear;
+    &::before{
+      content: "";
+      width: 2rem;
+      height: 2rem;
+      // border-left: 10px solid transparent;
+      // border-right:10px solid transparent ;
+      // border-bottom: 10px solid white;
+      position: absolute;
+      top:0;
+      right:2rem;
+      border-radius:3px ;
+      background-color: white;
+      // Để bằng chính chiều cao của nó
+      transform: translateY(-50%) rotate(45deg);
+      z-index: -1;
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      height: 3rem;
+      width: 100%;
+      top:0;
+      left:0;
+      background-color:transparent;
+      transform: translateY(-100%);
+    }
+  }
+  &:hover{
+    .dropdown__list{
+      // display: block;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  // Thực hành code giao diện đơn giản số 1 với flexbox #1
 }
