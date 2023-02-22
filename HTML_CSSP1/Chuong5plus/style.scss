@@ -1,20 +1,27 @@
 // Biến sử dụng trong scss là có dấu $ ở phía trước
 $primary-color:#DDA0DD;
+$second-color:#F4B1B2;
 $bule-color:#358BE5;
 html {
   font-size: 62.5%;
+}
+*{
+  box-sizing: border-box;
 }
 body{
   font-family: "Poppins", sans-serif;
   font-size: 1.6em;
   font-weight: 500;
-  width: 100%;
-  background-color:#E4E3E5;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to right bottom , $primary-color , $second-color);
+  // width: 100%;
+  // background-color:#E4E3E5;
 }
 // Tìm hiểu và nắm cơ bản kiến thức về Sass cho người mới
-p{
-  color:$primary-color ;
-}
+// p{
+//   color:$primary-color ;
+// }
 // ở css nếu muốn gọi môtj class thì ta phải css .class muốn thay đổi khi rê chuột vào thì .class:hover... thì lau ở sass ta có thể code nhanh hơn bằng dấu & có nghĩa là gạch nối từ
 .header{
   &-top{
@@ -168,5 +175,188 @@ p{
       visibility: visible;
     }
   }
-  // Thực hành code giao diện đơn giản số 1 với flexbox #1
+}
+// Thực hành code giao diện đơn giản số 1 với flexbox #1
+.work{
+  max-width:1200px ;
+  padding: 2rem;
+  margin: 0 auto;
+  &__heading{
+    color:#22212C;
+    font-weight: 500;
+    font-size: 2.5rem;
+    // Chữ cái đầu in hoa
+  text-transform: capitalize;
+    position: relative;
+    // Cách 1
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+    &::before{
+      content: "";
+      position: absolute;
+      // Cách 2
+      // bottom : -2rem;
+      bottom: 0;
+      left: 0;
+      width: 3.5rem;
+      height: 6px;
+      border-radius: 4px;
+      background-color:#0EAE86 ;
+    }
+  }
+  &__filter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+  &-tab{
+    display: flex;
+    &__item{
+      cursor: pointer;
+      padding: 1rem 1.5rem;
+      border: 1px solid #0EAE86 ;
+      text-align: center;
+      border-radius: 2rem 0 2rem 2rem;
+      transition: all 0.25s ease;
+      &:hover{
+        color: white;
+        background-color: #0EAE86;
+      }
+      &:not(:first-child){
+        margin-left: 1rem;
+      }
+    }
+  }
+  &__all{
+    display: inline-block;
+    padding: 5px 1rem;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+    color: #0EAE86;
+    background-color: #BDDBD4;
+  }
+  &__list{
+    display: flex;
+  }
+  &__item{
+    width: calc( 25% - 1.5rem);
+    border-radius: 6px;
+    overflow: hidden;
+    margin-left: 1.5rem;
+  }
+  &__image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width :1023px){
+  .work{
+    &__item{
+      width: calc( 50% - 1.5rem);
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+// Responsive là gì ? Giới thiệu Responsive toàn tập
+// Respon là những điểm của màn hình
+// 320 480 768 1024 1280 1366 1440 1600 1920
+// min-width: 1024 -> >= 1024px
+// max-width:1024 -> < = 1023px
+// code desktop first thì sử dụng max-width
+// @media screen and (max-width :1023px){}
+// code mobile first thì sử dụng min-width
+// @media screen and (min-width :1024px){}
+//  Thực hành code giao diện đơn giản số 2
+.author{
+  max-width: 1000px;
+  margin: 5rem auto;
+  // background-image: linear-gradient(to right ,#0EAE86,#eee);
+
+  border-radius: 1rem;
+  display: flex;
+  overflow: hidden;
+  height: 40rem;
+  &__name{
+    color: #333;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+  }
+  &__image{
+    height: 100%;
+   object-fit: cover;
+   width: 100%;
+  }
+  &__content{
+    padding: 3rem;
+    background-color:#eee;
+    width: 100%;
+  }
+  &__desc{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+  }
+  &__contact ,&-social{
+    display: flex;
+    align-items: center;
+  }
+  &-social{
+    margin-left: 1rem;
+    &__item{
+      margin-left: 1rem;
+    }
+  }
+}
+@media screen and (min-width: 768px){
+  .author{
+  &__image{
+    width: 35%;
+  }
+  &__content{
+    width: 65%;
+  }
+}
+}
+@media screen and (max-width: 767px){
+  .author{
+    padding: 0 2rem;
+    flex-direction: column;
+    height: auto;
+    &__image{
+      height: 20rem;
+    }
+
+  }
+}
+// Thực hành code giao diện đơn giản số 3
+@mixin flexbox($aligin: flex-start , $justify : flex-start , $flex-direction : row , $wrap : nowrap){
+  display: flex;
+  align-items: $aligin;
+  justify-content: $justify;
+  flex-direction: $flex-direction;
+  flex-wrap: $wrap;
+}
+.post{
+  &__list{
+    padding: 2rem;
+    @include flexbox() ;
+    margin-left: -2rem;
+  }
+  &__item{
+    margin-left: 2rem;
+    width: calc(33.33% - 2rem);
+  }
+  &__image{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+  }
+  &__content{
+    padding: 2rem;
+    background-color: white;
+
+  }
 }
