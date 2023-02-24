@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chuong6</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!--autocomplete hiển thị gợi ý đăng nhập nếu trước đó đã đăng nhập mặc định giá trị là on  -->
+    <!-- <form autocomplete="off"> -->
+    <!-- Khi nhấn vào title trên màn hình sẽ dẫn tới thuộc tính chứa id trong for -->
+    <!-- <label for="title">Title</label> -->
+    <!-- Các giá trị của input -->
+    <!-- required giúp cho giá trị nớ bắt buộc phải nhập vào không được để trống -->
+    <!-- minlength độ dài kí tự nhỏ nhất là 5 -->
+    <!-- maxlenghth đọ dài tối đa -->
+    <!--readonly chỉ đọc và không được điền gì cả  -->
+    <!-- disabled ẩn ko làm gì được luôn -->
+    <!-- <input
+        type="text"
+        required
+        minlength="5"
+        maxlength="10"
+        readonly
+        disabled
+      /> -->
+    <!-- min trong number là số nhỏ nhất là số 2
+      max cũng tương tự-->
+    <!-- <input type="number" min="2" max="10" />
+      <input type="email" id="title" value="zyzy" name="email" />
+      <input type="password" />
+      <input type="phone" />
+      <input type="date" />
+      <input type="time" />
+      <input type="checkbox" />
+      <input type="radio" />
+      <input type="file" />
+      <button type="submit">Ok</button>
+      <button type="reset">Reset</button>
+      <input type="checkbox" name="hobby" id="" />
+      <input type="checkbox" name="hobby" id="" />
+      <input type="checkbox" name="hobby" id="" /> -->
+    <!-- Đặt name trong radio để có thẻ chọn 1 trong tất các thuộc tính mà radio có thể chọn không có name có thể chọn hết -->
+    <!-- <input type="radio" name="hobby" id="" />
+      <input type="radio" name="hobby" id="" />
+      <input type="radio" name="hobby" id="" /> -->
+    <!-- Này khác với type submit vì nó là thể tự đóng nên ko thể chèn icon vào bên trong -->
+    <!-- <input type="button" name="" value="OK" />
+      <textarea name="" cols="30" rows="5" class="content"></textarea>
+      <select name="select" id="">
+        <option value="t">abcd</option>
+        <option value="t">abcd</option>
+        <option value="t">abcd</option>
+        <option value="t">abcd</option>
+      </select>
+    </form> -->
+    <!-- Bai css checkbox -->
+    <div class="checkbox">
+      <input
+        type="checkbox"
+        name=""
+        id="checkbox__input"
+        class="checkbox__input"
+      />
+      <label for="checkbox__input" class="checkbox__label"
+        >I agree the term
+      </label>
+    </div>
+    <!--Bai css radio -->
+    <div class="radio">
+      <input type="radio" name="" id="radio__input" class="radio__input" />
+      <label for="radio__input" class="radio__label">I agree the term </label>
+    </div>
+    <div class="radio__demo"></div>
+    <!-- Bai css File -->
+    <div class="file">
+      <input type="file" name="" id="file__input" class="file__input" />
+      <label for="file__input" class="file__label">
+        <i class="fa fa-upload"></i>
+      </label>
+    </div>
+    <!-- Hướng dẫn cách làm custom toggle-->
+    <div class="checkbox2">
+      <input
+        type="checkbox"
+        name=""
+        id="checkbox2__input"
+        class="checkbox2__input"
+      />
+      <label for="checkbox2__input" class="checkbox2__label">
+        <div class="checkbox2__spin"></div>
+      </label>
+    </div>
+    <!-- // Hướng dẫn code hiệu ứng cho input, textarea, button -->
+    <!-- placeholder tạo chữ mờ cho input -->
+    <input type="text" class="input-style" placeholder="Name" />
+  </body>
+</html>
