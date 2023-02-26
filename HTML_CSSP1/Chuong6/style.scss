@@ -26,13 +26,13 @@ body{
   width: $width;
   height:$height;
 }
-// input,select,textarea,button{
-//   // ẩn đường line bao ngoài các giá trị input
-//   outline: none;
-//   font-family: "Poppins", sans-serif;
-//   font-size: 1.2em;
-//   font-weight: normal;
-// }
+input,select,textarea,button{
+  // ẩn đường line bao ngoài các giá trị input
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+  font-weight: normal;
+}
 // button{
 //   cursor: pointer;
 // }
@@ -177,6 +177,7 @@ width: 40%;
 color: #241936;
 font-size: 1.6rem;
 margin-left: 5rem;
+resize: none;
 outline: none;
 transition:all 0.2s linear;
 &::-webkit-input-placeholder{
@@ -187,3 +188,27 @@ transition:all 0.2s linear;
   border-color:  #FF615E;
 }
 }
+.button-style{
+  width: 40%;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 0;
+  outline: none;
+  color:white;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  cursor: pointer;
+background-color: #E34F5C;
+transition:all 0.2s linear;
+box-shadow: 0 5px 0 0 #8b2f37 ;
+&:hover{
+  background-color: #ef8f90bd;
+  color:#E34F5C;
+}
+&:active{
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 0 #8b2f37 ;
+}
+}
+// Thực hành code giao diện form tổng hợp phần 1

@@ -12,6 +12,13 @@ body {
   font-weight: 500;
 }
 
+input, select, textarea, button {
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+  font-weight: normal;
+}
+
 .checkbox {
   margin: 5rem 5rem;
 }
@@ -146,6 +153,7 @@ body {
   color: #241936;
   font-size: 1.6rem;
   margin-left: 5rem;
+  resize: none;
   outline: none;
   transition: all 0.2s linear;
 }
@@ -155,6 +163,30 @@ body {
 .input-style:focus {
   box-shadow: 0 0 0 3px rgba(228, 198, 197, 0.3960784314);
   border-color: #FF615E;
+}
+
+.button-style {
+  width: 40%;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 0;
+  outline: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  background-color: #E34F5C;
+  transition: all 0.2s linear;
+  box-shadow: 0 5px 0 0 #8b2f37;
+}
+.button-style:hover {
+  background-color: rgba(239, 143, 144, 0.7411764706);
+  color: #E34F5C;
+}
+.button-style:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 0 #8b2f37;
 }
 
 /*# sourceMappingURL=style.css.map */
