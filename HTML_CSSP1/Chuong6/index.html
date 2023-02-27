@@ -71,7 +71,7 @@
       </select>
     </form> -->
     <!-- Bai css checkbox -->
-    <div class="checkbox">
+    <!-- <div class="checkbox">
       <input
         type="checkbox"
         name=""
@@ -81,22 +81,22 @@
       <label for="checkbox__input" class="checkbox__label"
         >I agree the term
       </label>
-    </div>
+    </div> -->
     <!--Bai css radio -->
-    <div class="radio">
+    <!-- <div class="radio">
       <input type="radio" name="" id="radio__input" class="radio__input" />
       <label for="radio__input" class="radio__label">I agree the term </label>
     </div>
-    <div class="radio__demo"></div>
+    <div class="radio__demo"></div> -->
     <!-- Bai css File -->
-    <div class="file">
+    <!-- <div class="file">
       <input type="file" name="" id="file__input" class="file__input" />
       <label for="file__input" class="file__label">
         <i class="fa fa-upload"></i>
       </label>
-    </div>
+    </div> -->
     <!-- Hướng dẫn cách làm custom toggle-->
-    <div class="checkbox2">
+    <!-- <div class="checkbox2">
       <input
         type="checkbox"
         name=""
@@ -106,11 +106,60 @@
       <label for="checkbox2__input" class="checkbox2__label">
         <div class="checkbox2__spin"></div>
       </label>
-    </div>
+    </div> -->
     <!-- // Hướng dẫn code hiệu ứng cho input, textarea, button -->
     <!-- placeholder tạo chữ mờ cho input -->
-    <input type="text" class="input-style" placeholder="Name" />
+    <!-- <input type="text" class="input-style" placeholder="Name" />
     <button class="button-style">Button</button>
-    <textarea name="" id="" cols="30" rows="10" class="input-style"></textarea>
+     <textarea name="" id="" cols="30" rows="10" class="input-style"></textarea> -->
+    <!-- Thực hành code giao diện form tổng hợp 1 -->
+    <div class="signup">
+      <div class="signup__content">
+        <h1 class="signup__heading">Sign Up</h1>
+        <h2 class="signup__caption">Sign up with</h2>
+        <div class="signup-social">
+          <div class="signup-social__item">
+            <i class="fab fa-google signup-social__icon"></i>
+            <span class="signup-social__text">Sign up with Google</span>
+          </div>
+          <div class="signup-social__item">
+            <i class="fab fa-facebook signup-social__icon"></i>
+            <span class="signup-social__text">Sign up with Facebook</span>
+          </div>
+        </div>
+        <form class="signup-form">
+          <div class="signup-form__row">
+            <div class="signup-form__group">
+              <label for="name" class="signup-form__label">Name</label>
+              <input type="text" class="signup-form__input" id="name" />
+            </div>
+            <div class="signup-form__group">
+              <label for="email" class="signup-form__label">Email</label>
+              <input type="email" class="signup-form__input" id="email" />
+            </div>
+          </div>
+          <div class="signup-form__group">
+            <label for="password" class="signup-form__label">Password</label>
+            <input type="password" class="signup-form__input" id="password" />
+          </div>
+          <div class="signup-form__term">
+            <input type="checkbox" name="" id="term" />
+            <label for="term">I have read and agree with term</label>
+          </div>
+          <button class="signup-form__submit">
+            <i class="fa fa-arrow-right"></i>
+          </button>
+          <p class="signup-form__already">
+            Already signin <a href="">Signin</a>
+          </p>
+        </form>
+      </div>
+      <div class="signup__image">
+        <img
+          src="https://images.unsplash.com/photo-1639843885527-43b098a9661a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80"
+          alt=""
+        />
+      </div>
+    </div>
   </body>
 </html>
