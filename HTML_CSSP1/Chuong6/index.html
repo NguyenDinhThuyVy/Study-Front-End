@@ -113,7 +113,7 @@
     <button class="button-style">Button</button>
      <textarea name="" id="" cols="30" rows="10" class="input-style"></textarea> -->
     <!-- Thực hành code giao diện form tổng hợp 1 -->
-    <div class="signup">
+    <!-- <div class="signup">
       <div class="signup__content">
         <h1 class="signup__heading">Sign Up</h1>
         <h2 class="signup__caption">Sign up with</h2>
@@ -127,26 +127,46 @@
             <span class="signup-social__text">Sign up with Facebook</span>
           </div>
         </div>
-        <form class="signup-form">
+        <form class="signup-form" autocomplete="off">
           <div class="signup-form__row">
             <div class="signup-form__group">
               <label for="name" class="signup-form__label">Name</label>
-              <input type="text" class="signup-form__input" id="name" />
+              <div class="signup-form__validate">
+                <input
+                  type="text"
+                  class="signup-form__input"
+                  id="name"
+                  required
+                />
+                <div class="signup-form__check">
+                  <i class="fa fa-check"></i>
+                </div>
+              </div>
             </div>
             <div class="signup-form__group">
               <label for="email" class="signup-form__label">Email</label>
-              <input type="email" class="signup-form__input" id="email" />
+              <input
+                type="email"
+                class="signup-form__input"
+                id="email"
+                required
+              />
             </div>
           </div>
           <div class="signup-form__group">
             <label for="password" class="signup-form__label">Password</label>
-            <input type="password" class="signup-form__input" id="password" />
+            <input
+              type="password"
+              class="signup-form__input"
+              id="password"
+              required
+            />
           </div>
           <div class="signup-form__term">
             <input type="checkbox" name="" id="term" />
             <label for="term">I have read and agree with term</label>
           </div>
-          <button class="signup-form__submit">
+          <button class="signup-form__submit" type="submit">
             <i class="fa fa-arrow-right"></i>
           </button>
           <p class="signup-form__already">
@@ -160,6 +180,157 @@
           alt=""
         />
       </div>
-    </div>
+    </div> -->
+    <!-- Tìm hiểu về bảng -->
+    <table>
+      <!-- phần đầu của bảng -->
+      <thead>
+        <tr>
+          <th>
+            <input type="checkbox" name="" id="" />
+          </th>
+          <th>Tipo</th>
+          <th>Codigo</th>
+          <th>Descripcion</th>
+          <th>Marca</th>
+          <th>En Cliente</th>
+          <th>Active</th>
+          <th>Estado</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <!-- phần body của bảng -->
+      <tbody>
+        <tr>
+          <td>
+            <input type="checkbox" name="" id="" />
+          </td>
+          <td>
+            <i class="fa fa-truck"></i>
+          </td>
+          <td>PR-0045</td>
+          <td>
+            <p class="desc">
+              Ở bài viết này mình sẽ chia sẻ cho các bạn theo góc nhìn của mình
+              để các bạn nắm rõ hơn về những cái này và biết áp dụng như thế nào
+              cho hợp lý nhé. Chiến thôi
+            </p>
+          </td>
+          <td>HP</td>
+          <td>6</td>
+          <td>7</td>
+          <td><span class="status status--active">Active</span></td>
+          <td>
+            <div class="action">
+              <i class="fa fa-edit action-icon"></i>
+              <i class="fa fa-circle action-icon"></i>
+              <i class="fa fa-trash action-icon"></i>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="" id="" />
+          </td>
+          <td>
+            <i class="fa fa-truck"></i>
+          </td>
+          <td>PR-0045</td>
+          <td>
+            <p class="desc">
+              Ở bài viết này mình sẽ chia sẻ cho các bạn theo góc nhìn của mình
+              để các bạn nắm rõ hơn về những cái này và biết áp dụng như thế nào
+              cho hợp lý nhé. Chiến thôi
+            </p>
+          </td>
+          <td>HP</td>
+          <td>6</td>
+          <td>7</td>
+          <td><span class="status status--active">Active</span></td>
+          <td>
+            <div class="action">
+              <i class="fa fa-edit action-icon"></i>
+              <i class="fa fa-circle action-icon"></i>
+              <i class="fa fa-trash action-icon"></i>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="" id="" />
+          </td>
+          <td>
+            <i class="fa fa-truck"></i>
+          </td>
+          <td>PR-0045</td>
+          <td>
+            <!-- colspan số cột và rowspan số hàng mặc định một cái 1 cột -->
+            <p class="desc">
+              Ở bài viết này mình sẽ chia sẻ cho các bạn theo góc nhìn của mình
+              để các bạn nắm rõ hơn về những cái này và biết áp dụng như thế nào
+              cho hợp lý nhé. Chiến thôi
+            </p>
+          </td>
+          <td>HP</td>
+          <td>6</td>
+          <td>7</td>
+          <td><span class="status status--averiado">Averiado</span></td>
+          <td>
+            <div class="action">
+              <i class="fa fa-edit action-icon"></i>
+              <i class="fa fa-circle action-icon"></i>
+              <i class="fa fa-trash action-icon"></i>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="" id="" />
+          </td>
+          <td>
+            <i class="fa fa-truck"></i>
+          </td>
+          <td>PR-0045</td>
+          <td>
+            <p class="desc">
+              Ở bài viết này mình sẽ chia sẻ cho các bạn theo góc nhìn của mình
+              để các bạn nắm rõ hơn về những cái này và biết áp dụng như thế nào
+              cho hợp lý nhé. Chiến thôi
+            </p>
+          </td>
+          <td>HP</td>
+          <td>
+            <div class="toggle">
+              <input
+                type="checkbox"
+                name="client"
+                id="toggle-client"
+                class="toggle-input"
+              />
+              <label for="toggle-client" class="toggle-label"></label>
+            </div>
+          </td>
+          <td>
+            <div class="toggle">
+              <input
+                type="checkbox"
+                name="active"
+                id="toggle-active"
+                class="toggle-input"
+              />
+              <label for="toggle-active" class="toggle-label"></label>
+            </div>
+          </td>
+          <td><span class="status status--repacacion">Reparacacion</span></td>
+          <td>
+            <div class="action">
+              <i class="fa fa-edit action-icon"></i>
+              <i class="fa fa-circle action-icon"></i>
+              <i class="fa fa-trash action-icon"></i>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>

@@ -270,6 +270,15 @@ body {
   display: block;
   outline: none;
   width: 100%;
+  transition: all 0.25s linear;
+}
+.signup-form__input:focus {
+  background-color: white;
+  border-color: #E13C46;
+}
+.signup-form__input:focus + .signup-form__check {
+  background-color: #E13C46;
+  color: white;
 }
 .signup-form__row {
   display: flex;
@@ -343,6 +352,159 @@ body {
 .signup-form__already a {
   color: #E13C46;
   text-decoration: none;
+}
+.signup-form__validate {
+  position: relative;
+}
+.signup-form__validate .signup-form__input {
+  padding-right: 6rem;
+}
+.signup-form__check {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 10px;
+  background-color: #eee;
+  color: #20144A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1439px) {
+  .signup__content {
+    width: calc(60% - 1rem);
+  }
+  .signup__image {
+    width: calc(40% - 1rem);
+  }
+}
+@media screen and (max-width: 1279px) {
+  .signup__content {
+    width: 100%;
+  }
+  .signup__image {
+    display: none;
+  }
+}
+@media screen and (max-width: 670px) {
+  body {
+    padding: 2rem;
+  }
+  .signup {
+    padding: 2rem;
+  }
+  .signup-social {
+    flex-direction: column;
+  }
+  .signup-social__item {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .signup-form__row {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .signup-form__row .signup-form__group {
+    width: 100%;
+  }
+  .signup-form__group {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+table {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(234, 195, 133, 0.5019607843);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  padding: 5rem;
+}
+table th {
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  color: #767A8D;
+  font-size: 1.4rem;
+  padding: 2rem;
+}
+table td, table th {
+  text-align: center;
+  color: #767A8D;
+  font-size: 1.4rem;
+  padding: 2rem;
+}
+table thead tr {
+  border-bottom: 1px solid #ccc;
+}
+table .desc {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 15rem;
+}
+table .status {
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 10px;
+}
+table .status--active {
+  color: green;
+  background-color: rgba(0, 128, 0, 0.4);
+}
+table .status--averiado {
+  color: #6B343D;
+  background-color: rgba(220, 186, 189, 0.4);
+}
+table .status--repacacion {
+  color: #6F6030;
+  background-color: rgba(226, 213, 175, 0.4);
+}
+table .action-icon {
+  cursor: pointer;
+  margin: 0 5px;
+}
+table .toggle-input {
+  display: none;
+}
+table .toggle-input:checked + .toggle-label {
+  background-color: #358BE5;
+}
+table .toggle-input:checked + .toggle-label::before {
+  background-color: #2263E5;
+  transform: translateY(-50%) translateX(3.5rem);
+}
+table .toggle-label {
+  display: inline-block;
+  width: 5rem;
+  height: 5px;
+  border-radius: 1rem;
+  background-color: #ccc;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.25s linear;
+}
+table .toggle-label::before {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+  background-color: #ccc;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.25s linear;
 }
 
 /*# sourceMappingURL=style.css.map */

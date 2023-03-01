@@ -1,0 +1,30 @@
+$primary-color:#E13C46;
+$second-color:#F4B1B2;
+$bule-color:#358BE5;
+$color-text:#20144A;
+$bcg-input:#e1e1e590;
+html {
+  font-size: 62.5%;
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6em;
+  font-weight: 500;
+  // width: 100vw;
+  // height: 100vh;
+
+}
+@mixin flexbox($aligin: flex-start , $justify : flex-start , $flex-direction : row , $wrap : nowrap){
+  display: flex;
+  align-items: $aligin;
+  justify-content: $justify;
+  flex-direction: $flex-direction;
+  flex-wrap: $wrap;
+}
+@mixin size($width , $height:$width){
+  width: $width;
+  height:$height;
+}
