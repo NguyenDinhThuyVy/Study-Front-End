@@ -10,9 +10,5 @@ let otherNumber = 200;
 otherNumber = "I love you";
 console.log(otherNumber);
 // Hoisting phải khai báo trước khi console.log
-const anotherNumber = true;
+const anotherNumber = 200;
 console.log(anotherNumber);
-// Data types: Number, String , Boolean , Undefined , Null
-// const và let không bị hoisting
-// var sẽ không bị hoisting
-// hạn chế sử dụng var

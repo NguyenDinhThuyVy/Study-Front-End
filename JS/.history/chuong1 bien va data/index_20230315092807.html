@@ -1,0 +1,29 @@
+int enA = 11; int in1 = 12; int in2 = 13; int enB = 10; int in3 = 9; int in4 =
+8; int pinLed = 5; int pinGas = A1; String key; int state = 0; int count = 0;
+int value = 0; void setup() { Serial.begin(9600); pinMode(pinGas, INPUT);
+pinMode(pinLed, OUTPUT); pinMode(enA, OUTPUT); pinMode(enB, OUTPUT);
+pinMode(in1, OUTPUT); pinMode(in2, OUTPUT); pinMode(in3, OUTPUT); pinMode(in4,
+OUTPUT); //Default digitalWrite(in1, LOW); digitalWrite(in2, LOW);
+digitalWrite(in3, LOW); digitalWrite(in4, LOW); digitalWrite(pinLed, LOW); }
+void loop() { value = map(analogRead(pinGas), 0, 1023, 0, 255); key =
+Serial.readString(); Serial.print("Value :"); Serial.println(value);
+Serial.println(state); if (key == "forward\n") { Serial.println("Forward Start
+:"); state = 0; } if (key == "backward\n") { Serial.println("Backward Start :");
+state = 1; } if (key == "default\n") { Serial.println("Default Start :"); state
+= 2; } if (key == "stop\n") { Serial.println("Stop!!!"); state = -1; } switch
+(state) { case -1: stop(); break; case 0: forward(value); break; case 1:
+backward(value); break; case 2: forward(255); break; default: forward(255); } if
+(value < 50 && state != 2) { stop(); } if(state == -2) { state = 0; }
+delay(2000); } void stop() { digitalWrite(in1, LOW); digitalWrite(in2, LOW);
+digitalWrite(in3, LOW); digitalWrite(in4, LOW); digitalWrite(pinLed, LOW); }
+void defaultS(int dutycycle) { // Động cơ A analogWrite(enA, dutycycle);
+digitalWrite(in1, HIGH); digitalWrite(in2, LOW); // Động cơ B analogWrite(enB,
+dutycycle); digitalWrite(in3, HIGH); digitalWrite(in4, LOW); // Đèn
+analogWrite(pinLed, dutycycle); } void backward(int dutycycle) { // Động cơ A
+analogWrite(enA, dutycycle); digitalWrite(in1, HIGH); digitalWrite(in2, LOW); //
+Động cơ B analogWrite(enB, dutycycle); digitalWrite(in3, HIGH);
+digitalWrite(in4, LOW); // Đèn analogWrite(pinLed, dutycycle); } void
+forward(int dutycycle) { // Động cơ A analogWrite(enA, dutycycle);
+digitalWrite(in1, LOW); digitalWrite(in2, HIGH); // Động cơ B analogWrite(enB,
+dutycycle); digitalWrite(in3, LOW); digitalWrite(in4, HIGH); // Đèn
+analogWrite(pinLed, dutycycle); }
