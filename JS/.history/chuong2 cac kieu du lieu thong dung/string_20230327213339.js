@@ -49,16 +49,5 @@ console.log(myStr.trimEnd());
 // lấy ra kí tự theo vị trí index
 console.log(myStr.charAt(5));
 // substr --> Lấy ra 1 phần của chuỗi (string)
-// substr(index, length) ->index: vị trí, length : số lươngj kí tự bạn muốn lấy
-console.log(myStr.substr(1, 5)); // ronte
+console.log(myStr.substr(1, 5));
 // substring --> Lấy ra các kí tụ của chuỗi (string)
-// substring(start index , end index)
-console.log(myStr.substring(1, 5)); // ront
-// Loại bỏ khoảng trống 2 bên , đưa tất cả về in hoa , thay chữ Developer D thành chữ zyzy so cute, sau đó repeat 2 lần;
-console.log(
-  `Result of myStr :${myStr
-    .trim()
-    .replace("Developer D", "zyzy so cute")
-    .toUpperCase()
-    .repeat(2)}`
-);

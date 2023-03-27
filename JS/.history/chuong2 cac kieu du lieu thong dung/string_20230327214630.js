@@ -54,11 +54,3 @@ console.log(myStr.substr(1, 5)); // ronte
 // substring --> Lấy ra các kí tụ của chuỗi (string)
 // substring(start index , end index)
 console.log(myStr.substring(1, 5)); // ront
-// Loại bỏ khoảng trống 2 bên , đưa tất cả về in hoa , thay chữ Developer D thành chữ zyzy so cute, sau đó repeat 2 lần;
-console.log(
-  `Result of myStr :${myStr
-    .trim()
-    .replace("Developer D", "zyzy so cute")
-    .toUpperCase()
-    .repeat(2)}`
-);
