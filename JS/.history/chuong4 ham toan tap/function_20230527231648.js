@@ -134,14 +134,3 @@ console.log(useCallBack(2, 8, printlMax));
 const square = function (x) {
   return x * x;
 };
-square(5); //25
-// Arrow function
-const square1 = () => {
-  return 1000;
-};
-// rút gọn khi return
-const square2 = () => 100;
-//   Viết nhiều thi phải
-// const square = ()=> {
-//   handle code and return
-// }

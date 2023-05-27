@@ -139,9 +139,3 @@ square(5); //25
 const square1 = () => {
   return 1000;
 };
-// rút gọn khi return
-const square2 = () => 100;
-//   Viết nhiều thi phải
-// const square = ()=> {
-//   handle code and return
-// }

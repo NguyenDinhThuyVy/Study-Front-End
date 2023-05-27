@@ -103,45 +103,4 @@ function compare(a, b) {
   return Math.max(a, b);
 }
 console.log(compare(10, 100));
-//////////2. In  hoa chữ cái đầu trong chữ ví dụ vy -> Vy, VY -> vy
-//  capitalize
-function capitalize(word = "") {
-  if (word.length == 0) return null;
-  // convert to lower cáe first
-  let newWord = word.toLowerCase().charAt(0).toUpperCase();
-  // chartAt(index) vị trí in hoa
-  // hello -> slice(0,3) -> hel
-  // hello -> slice(1) ->ello
-  // slice(startindex, endindex-1)
-  // console.log(newWord);
-  let otherWord = word.toLowerCase().slice(1);
-  // console.log(otherWord);
-  console.log(`${newWord}${otherWord}`);
-}
-capitalize("vy");
-// ////////////////////////////////////// 3. Viết hàm có sử dụng callback (function là parameter của function khác) in ra kết quả của hàm compare đã viết ở trên
-function useCallBack(a, b, callback) {
-  let max = compare(a, b);
-  callback(max);
-}
-function printlMax(number) {
-  console.log(number);
-}
-console.log(useCallBack(2, 8, printlMax));
-// Arrow function : anonymous function
-// ECMAScript
-// Normal function : anonymous function
-const square = function (x) {
-  return x * x;
-};
-square(5); //25
-// Arrow function
-const square1 = () => {
-  return 1000;
-};
-// rút gọn khi return
-const square2 = () => 100;
-//   Viết nhiều thi phải
-// const square = ()=> {
-//   handle code and return
-// }
+//////////2. In  hoa chữ cái đầu trong chữ ví dụ vy -> Vy

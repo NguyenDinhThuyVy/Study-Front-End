@@ -122,26 +122,12 @@ capitalize("vy");
 // ////////////////////////////////////// 3. Viết hàm có sử dụng callback (function là parameter của function khác) in ra kết quả của hàm compare đã viết ở trên
 function useCallBack(a, b, callback) {
   let max = compare(a, b);
-  callback(max);
+  function callback(max) {
+    console.log(max);
+  }
+  return callback();
 }
-function printlMax(number) {
-  console.log(number);
-}
-console.log(useCallBack(2, 8, printlMax));
-// Arrow function : anonymous function
-// ECMAScript
-// Normal function : anonymous function
-const square = function (x) {
-  return x * x;
-};
-square(5); //25
-// Arrow function
-const square1 = () => {
-  return 1000;
-};
-// rút gọn khi return
-const square2 = () => 100;
-//   Viết nhiều thi phải
-// const square = ()=> {
-//   handle code and return
+// function printlMax(number) {
+//   console.log(number);
 // }
+console.log(useCallBack(2, 8, callback));
