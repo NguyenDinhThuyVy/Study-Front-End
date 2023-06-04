@@ -128,7 +128,6 @@ console.log(everyNumber);
 // reduce -> gom các phần tử trong mảng về  giá trị
 // .reduce((a,b) => {} , initialize value);
 const totalNumber = listNumber.reduce(function (previousValue, currentValue) {
-  console.log(previousValue, currentValue);
   return previousValue + currentValue;
 }, 0);
 console.log(totalNumber);

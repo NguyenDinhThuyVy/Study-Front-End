@@ -127,8 +127,7 @@ const everyNumber = listNumber.every((value) => value > 4);
 console.log(everyNumber);
 // reduce -> gom các phần tử trong mảng về  giá trị
 // .reduce((a,b) => {} , initialize value);
-const totalNumber = listNumber.reduce(function (previousValue, currentValue) {
-  console.log(previousValue, currentValue);
-  return previousValue + currentValue;
+const totalNumber = listNumber.reduce(function (a, b) {
+  return a + b;
 }, 0);
 console.log(totalNumber);
