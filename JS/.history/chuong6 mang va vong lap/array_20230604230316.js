@@ -118,10 +118,3 @@ const greaterThanThree = listNumber.filter((value, index, array) => {
   return value > 3;
 });
 console.log(greaterThanThree);
-// some and every return boolean
-// some return true khi thỏa một điều kiện và ngược lại trả về flase khi không thỏa điều kiện nào cả
-const someNumber = listNumber.some((value) => value > 3);
-console.log(someNumber);
-//  every nó chỉ trả về true khi tất cả điều kiện đều đúng và ngược lại chỉ cần một cái sai sẽ return flase
-const everyNumber = listNumber.every((value) => value > 4);
-console.log(everyNumber);

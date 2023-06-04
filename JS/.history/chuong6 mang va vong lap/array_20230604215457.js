@@ -98,7 +98,6 @@ console.log(findYourIndex); //100
 // map -> duyệt qua từng phần tử trong mảng và trả ra một mảng mới mà không thay đổi mảng ban đầu
 const listNumber = [1, 2, 3, 4, 5];
 // trả ra một mảng mới mà các số( giá trị)trong mảng cũ nhân 2
-// .map(callback(value, index, array))
 const listNumberDouble = listNumber.map(function (value, index, array) {
   return value * 2;
 });
@@ -113,15 +112,3 @@ const listNumberTripple = listNumber.forEach((value, index, array) => {
 // Map thì trả về mảng dựa trên mảng bên đầu, còn forEach  vì không có return nên ko trả về gì hết.
 // Map thì có thể dừng còn , forEach thì chạy vô hạn
 // filter -> DÙng để sàng lọc các phần tử trong mảng thỏa điều kiện nào đó
-// .filter(callback(value, index, array))
-const greaterThanThree = listNumber.filter((value, index, array) => {
-  return value > 3;
-});
-console.log(greaterThanThree);
-// some and every return boolean
-// some return true khi thỏa một điều kiện và ngược lại trả về flase khi không thỏa điều kiện nào cả
-const someNumber = listNumber.some((value) => value > 3);
-console.log(someNumber);
-//  every nó chỉ trả về true khi tất cả điều kiện đều đúng và ngược lại chỉ cần một cái sai sẽ return flase
-const everyNumber = listNumber.every((value) => value > 4);
-console.log(everyNumber);
