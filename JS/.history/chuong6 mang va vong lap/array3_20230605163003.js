@@ -54,9 +54,5 @@ console.log(a, b, c);
 // const [indexName, indexName, indexName] = toys; -> clean code
 const [ball, sword, arrow, ...rest] = toys;
 console.log(ball, sword, arrow);
-// rest parameter ... -> lấy giá trị còn lại
+// rest parameter ...
 console.log(rest);
-function demo(a, ...rest) {
-  return console.log(a, rest);
-}
-demo(1, 2, 3, 4, 5, 6);

@@ -59,4 +59,3 @@ console.log(rest);
 function demo(a, ...rest) {
   return console.log(a, rest);
 }
-demo(1, 2, 3, 4, 5, 6);

@@ -50,13 +50,7 @@ const toys = ["ball", "sword", "arrow", "magic", "water", " fire"];
 const a = toys[0]; //ball
 const b = toys[1]; //ball
 const c = toys[2]; //ball
-console.log(a, b, c);
-// const [indexName, indexName, indexName] = toys; -> clean code
-const [ball, sword, arrow, ...rest] = toys;
+
+// const [indexName, indexName, indexName] = toys;
+const [ball, sword, arrow] = toys;
 console.log(ball, sword, arrow);
-// rest parameter ... -> lấy giá trị còn lại
-console.log(rest);
-function demo(a, ...rest) {
-  return console.log(a, rest);
-}
-demo(1, 2, 3, 4, 5, 6);
