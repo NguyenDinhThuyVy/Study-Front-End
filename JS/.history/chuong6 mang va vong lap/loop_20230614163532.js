@@ -30,22 +30,8 @@ console.log(result);
 // while(condition : dkien){
 // bodycode
 // }
-// let number = 1;
-// while (number < 10) {
-//   console.log("number is " + number);
-//   number += 3;
-// }
-
-// let number2 = 1;
-// do {
-//   number2 += 2;
-//   console.log("number is " + number2);
-// } while (number2 < 10);
-//  vòng lặp for of
-//  for( value of array) {}
-let a = [];
-for (let value of numbers) {
-  value += 10;
-  a.push(value);
+let number = 1;
+while (number < 10) {
+console.log("number is less than 10");
+number + = 2;
 }
-console.log(a);

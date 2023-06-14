@@ -41,11 +41,3 @@ console.log(result);
 //   number2 += 2;
 //   console.log("number is " + number2);
 // } while (number2 < 10);
-//  vòng lặp for of
-//  for( value of array) {}
-let a = [];
-for (let value of numbers) {
-  value += 10;
-  a.push(value);
-}
-console.log(a);

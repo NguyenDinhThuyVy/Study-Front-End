@@ -21,31 +21,7 @@ for (let i = 0; i < numbers.length; i++) {
 console.log(copuAr);
 // 2.Đảo ngược từ " i love " -> "evol i"
 let str = " i love";
-let result = "";
-for (let i = str.length - 1; i >= 0; i--) {
-  result = result + str[i];
+for (let i = str.length; i >= 0; i--) {
+  console.log(str[i]);
 }
-console.log(result);
-//  while and do while
-// while(condition : dkien){
-// bodycode
-// }
-// let number = 1;
-// while (number < 10) {
-//   console.log("number is " + number);
-//   number += 3;
-// }
-
-// let number2 = 1;
-// do {
-//   number2 += 2;
-//   console.log("number is " + number2);
-// } while (number2 < 10);
-//  vòng lặp for of
-//  for( value of array) {}
-let a = [];
-for (let value of numbers) {
-  value += 10;
-  a.push(value);
-}
-console.log(a);
+console.log(str);

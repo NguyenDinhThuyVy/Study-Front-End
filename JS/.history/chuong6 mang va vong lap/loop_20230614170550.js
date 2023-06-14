@@ -48,4 +48,3 @@ for (let value of numbers) {
   value += 10;
   a.push(value);
 }
-console.log(a);
