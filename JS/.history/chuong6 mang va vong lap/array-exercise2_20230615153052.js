@@ -46,57 +46,14 @@ function reverseNumber(number) {
 function fizzBuzz(number) {
   for (let i = 1; i <= number; i++) {
     if (i % 2 === 0) {
-      console.log(`Fizz ` + i);
+      console.log(`Fizz`);
     }
-    if (i % 3 === 0) {
-      console.log(`Buzz ` + i);
-    }
-    if (i % 3 === 0 && i % 2 === 0) {
-      console.log(`FizzBuzz ` + i);
+    if (number % 3 === 0) {
+      console.log(`Buzz`);
+    } else if (number % 3 === 0 && number % 2 === 0) {
+      console.log(`FizzBuzz`);
+      break;
     }
   }
 }
-fizzBuzz(6);
-
-// 5. Cho 1 chuỗi bất kỳ, đếm số lượng kí tự `vowels` có trong chuỗi.
-// vowels là các kí tự u e o a i
-// Ví dụ "evondev" -> 3
-function countVowels(string) {
-  let count = 0;
-  const characters = "ueoai";
-  for (let c of string.toLowerCase()) {
-    if (characters.includes(c)) count++;
-  }
-  return count;
-}
-console.log(countVowels("EVONDEV"));
-
-// 6. Cho 1 mảng các giá trị số [1,2,3,1,1,1,2,2,2,5,5,5,7,7,6]. Viết một function trả về một mảng với các giá trị unique. Kết quả ở trên sẽ là [1,2,3,5,7,6];
-function unique(arr) {
-  let result = [];
-  if (!Array.isArray(arr)) return result;
-  for (let i = 0; i < arr.length; i++) {
-    if (!result.includes(arr[i])) {
-      result.push(arr[i]);
-    }
-  }
-  return result;
-}
-console.log(unique([1, 2, 3, 1, 1, 1, 2, 2, 2, 5, 5, 5, 7, 7, 6]));
-
-// 7. Viết 1 function xử lý từ 1 mảng lớn thành nhiều mảng con dựa vào một số nguyên đầu vào. Ví dụ ([1,2,3,4,5], 2) -> [[1,2], [3,4], [5]]
-// ([1,2,3,4,5,6], 3) -> [[1,2,3], [4,5,6]]
-
-function splitArray(array, number) {
-  let result = [];
-  // slice(start, end)
-  // [1,2,3,4,5,6]
-  let index = 0;
-  while (index < array.length) {
-    result.push(array.slice(index, number + index));
-    index = index + number;
-  }
-  console.log(result);
-  return result;
-}
-splitArray([1, 2, 3, 4, 5, 6], 2);
+fizzBuzz(5);
