@@ -72,12 +72,3 @@ const user = {
 // console.log(newUser);
 
 // Sao cheép object cơ bản
-// newUser.userName = "tran anh tuan";
-// newUser.lastName = "john";
-// console.log(newUser);
-// [...array] {...object}
-// spread operator to copy object
-const newUser = { ...user };
-newUser.fullName = "trananhtuan";
-console.log(user);
-console.log(newUser);

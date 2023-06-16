@@ -56,28 +56,3 @@ const d = { ...a, ...b };
 console.log(d);
 
 // Object.freeze(object) -> ngăn chặn chỉnh sửa key và value của object
-const car = {
-  brand: "BMW",
-};
-const newCar = Object.freeze(car);
-newCar.brand = "audi";
-console.log(newCar);
-
-// Object.seal(object) -> cho phép chỉnh sửa key và value nhưng không được thêm key value mới
-const user = {
-  fullName: "Nguyen Hoang My",
-};
-// const newUser = Object.seal(user);
-// newUser.age = 28;
-// console.log(newUser);
-
-// Sao cheép object cơ bản
-// newUser.userName = "tran anh tuan";
-// newUser.lastName = "john";
-// console.log(newUser);
-// [...array] {...object}
-// spread operator to copy object
-const newUser = { ...user };
-newUser.fullName = "trananhtuan";
-console.log(user);
-console.log(newUser);

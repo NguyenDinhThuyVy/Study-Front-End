@@ -78,6 +78,5 @@ const user = {
 // [...array] {...object}
 // spread operator to copy object
 const newUser = { ...user };
-newUser.fullName = "trananhtuan";
+newUser.userName = "trananhtuan";
 console.log(user);
-console.log(newUser);
