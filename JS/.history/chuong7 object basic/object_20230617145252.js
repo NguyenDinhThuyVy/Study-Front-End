@@ -103,9 +103,6 @@ const student2 = {
   age: 27,
   fale: true,
   hi: function () {
-    console.log(this);
+    console.log("hello envondev");
   },
 };
-student2.hi();
-
-// optinal chaining

@@ -89,23 +89,4 @@ newUser.fullName = "trananhtuan";
 // console.log(newUser);
 // Object.assign
 const newUser1 = Object.assign({}, user);
-// console.log(newUser1);
-// clone nested object object phức tạp
-const newUser3 = JSON.parse(JSON.stringify(user));
-newUser3.school.name = "hihi";
-// console.log("New User 3");
-// console.log(newUser3);
-
-// this keyword
-//  this nó sẽ đề cập đến object gần nhất
-const student2 = {
-  name: "zyzy",
-  age: 27,
-  fale: true,
-  hi: function () {
-    console.log(this);
-  },
-};
-student2.hi();
-
-// optinal chaining
+console.log(newUser1);

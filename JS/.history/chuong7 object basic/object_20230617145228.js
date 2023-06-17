@@ -97,15 +97,11 @@ newUser3.school.name = "hihi";
 // console.log(newUser3);
 
 // this keyword
-//  this nó sẽ đề cập đến object gần nhất
 const student2 = {
   name: "zyzy",
   age: 27,
   fale: true,
   hi: function () {
-    console.log(this);
+    console.log("hello envondev");
   },
 };
-student2.hi();
-
-// optinal chaining

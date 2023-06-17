@@ -107,5 +107,3 @@ const student2 = {
   },
 };
 student2.hi();
-
-// optinal chaining

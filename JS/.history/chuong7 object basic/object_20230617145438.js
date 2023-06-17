@@ -106,6 +106,4 @@ const student2 = {
     console.log(this);
   },
 };
-student2.hi();
-
-// optinal chaining
+students2.hi();
