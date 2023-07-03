@@ -17,3 +17,7 @@ console.log(signleNode);
 // nos giống array là có thể loop nhưng không sử dụng được các phương thức như push , pop, shift
 const multiNodes = document.querySelectorAll(".item");
 console.log(multiNodes);
+
+// 2.3 document.getElementByClassName("header")->Trả về một HTML Collection chứa danh sách các node, nếu không có thì trả về empty
+const classNodes = document.getElementsByClassName("header");
+console.log(classNodes);

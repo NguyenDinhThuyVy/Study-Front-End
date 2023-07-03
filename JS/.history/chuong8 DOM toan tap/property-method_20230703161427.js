@@ -1,0 +1,17 @@
+// 1. slector.getAttribute("attribute") ->lấy ra giá trị của attribute selector
+// slector là 1 cái không phải 1 llist
+// attribute -> thuôjc tính : href , id , class , src , style
+const link = document.querySelector(".link");
+console.log(link.getAttribute("href"));
+const li = document.querySelectorAll(".item");
+// li.forEach((item) => {
+//   console.log(item.getAttribute("class"));
+// });
+// console.log(li);
+
+// 2.selector.setAttribute("attribute" , value) -> set giá trị cho attribute nào đó cho selector
+link.setAttribute("target", "_blank"); // _blank để mở ra 1 tag mới
+const listLinks = document.querySelectorAll(".link");
+a.forEach((link) => {
+  link.setAttribute("target", "_blank");
+});
