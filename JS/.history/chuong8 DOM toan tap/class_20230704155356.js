@@ -1,5 +1,5 @@
 // 1. selector.classList.add("class")
-// const container = document.querySelector(".container");
+const container = document.querySelector(".container");
 // container.classList.add("is-active");
 
 // 2.selector.classList.remove("class")
@@ -18,9 +18,5 @@
 // container.classList.toggle("is-active");
 
 // 5.selector.classname -> trả ra các chuỗi các class của selector
-// const h = document.querySelector("h1");
-// console.log(h.className);
-
-// 6.menu toggle class
-const menu = document.querySelector(".menu");
-menu.classList.add("is-show");
+const h = document.querySelector("h1");
+console.log(h.className);

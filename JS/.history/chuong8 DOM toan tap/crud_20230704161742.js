@@ -12,7 +12,7 @@ div.className = "container wrapper"; // thay đổi tên class
 div.textContent =
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, laboriosam error dolor dignissimos aliquam mollitia molestiae quibusdam provident voluptatum, rem recusandae consequuntur in eligendi aut laudantium, cum nesciunt. Laboriosam, accusantium?";
 div.innerHTML = `<div class="content"><h3>hihi</h3></div>`;
-div.setAttribute("data-name", "zyzy");
+div.setAttribute("data-name", "evondev");
 
 // Bài tập tạo ra HTML như đã minh hoạ ở file HTML
 const card = document.createElement("div");

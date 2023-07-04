@@ -20,7 +20,3 @@
 // 5.selector.classname -> trả ra các chuỗi các class của selector
 // const h = document.querySelector("h1");
 // console.log(h.className);
-
-// 6.menu toggle class
-const menu = document.querySelector(".menu");
-menu.classList.add("is-show");

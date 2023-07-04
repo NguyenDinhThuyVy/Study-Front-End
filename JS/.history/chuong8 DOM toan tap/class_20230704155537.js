@@ -22,5 +22,3 @@
 // console.log(h.className);
 
 // 6.menu toggle class
-const menu = document.querySelector(".menu");
-menu.classList.add("is-show");

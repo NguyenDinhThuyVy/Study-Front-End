@@ -8,12 +8,11 @@ const div = document.createElement("div");
 const body = document.body;
 body.appendChild(div);
 div.classList.add("container");
-div.className = "container wrapper"; // thay đổi tên class
+div.className = "container wrapper";
 div.textContent =
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, laboriosam error dolor dignissimos aliquam mollitia molestiae quibusdam provident voluptatum, rem recusandae consequuntur in eligendi aut laudantium, cum nesciunt. Laboriosam, accusantium?";
-div.innerHTML = `<div class="content"><h3>hihi</h3></div>`;
-div.setAttribute("data-name", "zyzy");
-
+div.innerHTML = `<div class="content"><h3></h3></div>`;
+div.setAttribute("data-name", "evondev");
 // Bài tập tạo ra HTML như đã minh hoạ ở file HTML
 const card = document.createElement("div");
 card.classList.add("card");
