@@ -43,4 +43,4 @@ body.appendChild(h1Clone);
 
 // 5. element.hasChildNodes() -> kiểm tra element có phần tử con hay không, có -> true, không thì trả về false
 console.log(document.querySelector("h3").hasChildNodes()); // true
-console.log(document.querySelector("h1").hasChildNodes()); // true
+console.log(document.querySelector("h1").hasChildNodes()); // false

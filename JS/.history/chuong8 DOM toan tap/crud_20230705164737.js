@@ -37,10 +37,9 @@ const h1 = document.createElement("h1");
 body.appendChild(h1);
 h1.appendChild(text);
 
-// 4. element.cloneNode -> sao chép 1 thẻ
+// 4. element.cloneNode
 const h1Clone = h1.cloneNode(true);
 body.appendChild(h1Clone);
 
 // 5. element.hasChildNodes() -> kiểm tra element có phần tử con hay không, có -> true, không thì trả về false
-console.log(document.querySelector("h3").hasChildNodes()); // true
-console.log(document.querySelector("h1").hasChildNodes()); // true
+console.log(document.querySelector("h3").hasChildNodes()); // false

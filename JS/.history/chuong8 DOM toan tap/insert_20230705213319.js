@@ -18,4 +18,4 @@ const template = ` <ul class ="menu2">
 <li>2</li>
 <li>3</li>
 </ul>`;
-document.body.insertAdjacentHTML("beforeend", template);
+document.body.insertAdjacentHTML("afterbegin", template);

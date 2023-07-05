@@ -1,6 +1,6 @@
 // thêm xoá sửa node trong Javascript
 // 1. Tạo ra Element trong Javascript: document.createElement("tag")
-const div = document.createElement("div");
+// const div1 = document.createElement("div");
 
 // 2. selector.appendChild
 // document.body -> thẻ body
@@ -20,27 +20,22 @@ div.setAttribute("data-name", "zyzy");
 // Bài tập tạo ra HTML như đã minh hoạ ở file HTML
 const card = document.createElement("div");
 card.classList.add("card");
+body.appendChild(card);
 const cardImage = document.createElement("img");
 cardImage.setAttribute(
   "src",
   "https://tse4.mm.bing.net/th?id=OIP.BmowCY0dHjG5AOkT2-MhogHaEK&pid=Api&P=0&h=180"
 );
 cardImage.classList.add("cardImage");
-card.appendChild(cardImage);
-body.appendChild(card);
+div2.appendChild(cardImage);
 
 // 3. document.createTextNode
-const text = document.createTextNode(
-  "Hello my name is zyzy . Today is good. Have a nice day"
-);
+const text = document.createTextNode("Hello my name is Evondev");
 const h1 = document.createElement("h1");
 body.appendChild(h1);
 h1.appendChild(text);
-
-// 4. element.cloneNode -> sao chép 1 thẻ
+// 4. element.cloneNode
 const h1Clone = h1.cloneNode(true);
 body.appendChild(h1Clone);
-
 // 5. element.hasChildNodes() -> kiểm tra element có phần tử con hay không, có -> true, không thì trả về false
-console.log(document.querySelector("h3").hasChildNodes()); // true
-console.log(document.querySelector("h1").hasChildNodes()); // true
+console.log(document.querySelector("h3").hasChildNodes()); // false

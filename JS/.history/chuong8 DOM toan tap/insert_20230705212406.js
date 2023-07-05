@@ -11,11 +11,3 @@ h3.insertAdjacentText("afterend", "afterend");
 const strong = document.createElement("strong");
 strong.classList.add("bold");
 h3.insertAdjacentElement("beforeend", strong);
-
-// 3.element.insertAdjacentHTML
-const template = ` <ul class ="menu2">
-<li>1</li>
-<li>2</li>
-<li>3</li>
-</ul>`;
-document.body.insertAdjacentHTML("beforeend", template);
