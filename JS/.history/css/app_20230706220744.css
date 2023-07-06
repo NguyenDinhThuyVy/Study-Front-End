@@ -185,8 +185,8 @@ body {
   animation: noti 4s forwards 1 linear;
 }
 
-
-@keyframes noti {
+/*
+/* @keyframes noti {
 
   20%,
   80% {
@@ -196,13 +196,12 @@ body {
   100% {
     transform: translateY(150%);
   }
-}
-
-.noti-image {
+} */
+*/ .noti-image {
   width: 30%;
   flex-shrink: 0;
   border-radius: inherit;
-  object-fit: over;
+  object-fit: cover;
 }
 
 .noti-content {

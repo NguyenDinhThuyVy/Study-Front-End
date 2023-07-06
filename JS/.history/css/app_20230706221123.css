@@ -193,20 +193,20 @@ body {
     transform: translateY(0);
   }
 
-  100% {
+  /* 100% {
     transform: translateY(150%);
-  }
+  } */
 }
 
 .noti-image {
   width: 30%;
   flex-shrink: 0;
   border-radius: inherit;
-  object-fit: over;
+  object-fit: cover;
 }
 
 .noti-content {
-  padding: 15px;
+  /* padding: 15px; */
   flex: 1;
 }
 

@@ -32,5 +32,4 @@ console.log(span.lastElementChild); // <u> b </u>
 
 // 6.nextSibling vs previousSibling
 console.log(span.nextSibling); //#text
-console.log(span.previousSibling); //#text
-console.log(span.previousSibling.previousSibling); //     <a href="#" class="demo">demo</a>
+console.log(span.previousSibling);

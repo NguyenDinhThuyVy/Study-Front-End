@@ -185,7 +185,6 @@ body {
   animation: noti 4s forwards 1 linear;
 }
 
-
 @keyframes noti {
 
   20%,
@@ -202,7 +201,7 @@ body {
   width: 30%;
   flex-shrink: 0;
   border-radius: inherit;
-  object-fit: over;
+  object-fit: cover;
 }
 
 .noti-content {

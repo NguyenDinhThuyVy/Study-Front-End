@@ -182,10 +182,10 @@ body {
   max-width: 400px;
   height: 130px;
   transform: translateY(150%);
-  animation: noti 4s forwards 1 linear;
+  /* animation: noti 4s forwards 1 linear; */
 }
 
-
+/*
 @keyframes noti {
 
   20%,
@@ -196,13 +196,13 @@ body {
   100% {
     transform: translateY(150%);
   }
-}
+} */
 
 .noti-image {
   width: 30%;
   flex-shrink: 0;
   border-radius: inherit;
-  object-fit: over;
+  object-fit: cover;
 }
 
 .noti-content {

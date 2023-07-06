@@ -181,12 +181,12 @@ body {
   display: flex;
   max-width: 400px;
   height: 130px;
-  transform: translateY(150%);
-  animation: noti 4s forwards 1 linear;
+  /* transform: translateY(150%); */
+  /* animation: noti 4s forwards 1 linear; */
 }
 
 
-@keyframes noti {
+/* @keyframes noti {
 
   20%,
   80% {
@@ -196,7 +196,7 @@ body {
   100% {
     transform: translateY(150%);
   }
-}
+} */
 
 .noti-image {
   width: 30%;
@@ -218,5 +218,5 @@ body {
 
 .noti-desc {
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1.0;
 }
