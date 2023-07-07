@@ -220,3 +220,11 @@ body {
   font-size: 14px;
   line-height: 1.6;
 }
+
+/* Bai 140 Các thuộc tính liên quan tới offset*/
+.boxed {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  border: 5px solid;
+}

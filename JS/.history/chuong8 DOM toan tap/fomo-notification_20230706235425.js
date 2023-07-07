@@ -12,24 +12,8 @@ function creatNotification(title = "Welcome to website") {
 </div>`;
   document.body.insertAdjacentHTML("afterbegin", template);
 }
-
-const randomData = [
-  "Welcome to my first website",
-  "Say hi ! Have A Nice Day",
-  "My name is zyzy",
-  " Hello.Today is perfect",
-  "I am a frontend developer",
-];
-
-let lastTitle;
 const timer = setInterval(function () {
   const check = document.querySelector(".noti");
   if (check) check.parentNode.removeChild(check);
-  // Lấy random title từ mảng randomData
-  // Công thức random trong mảng bất kỳ: array[Math.floor(Math.random() * array.length)]
-  const title = randomData[Math.floor(Math.random() * randomData.length)];
-  if (lastTitle !== title) {
-    creatNotification(title);
-  }
-  lastTitle = title;
+  creatNotification();
 }, 5000);

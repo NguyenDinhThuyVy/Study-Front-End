@@ -28,8 +28,5 @@ const timer = setInterval(function () {
   // Lấy random title từ mảng randomData
   // Công thức random trong mảng bất kỳ: array[Math.floor(Math.random() * array.length)]
   const title = randomData[Math.floor(Math.random() * randomData.length)];
-  if (lastTitle !== title) {
-    creatNotification(title);
-  }
-  lastTitle = title;
+  creatNotification(title);
 }, 5000);
