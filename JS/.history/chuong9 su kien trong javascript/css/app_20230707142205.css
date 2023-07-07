@@ -1,0 +1,77 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
+input {
+  line-height: normal;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* using rem unit */
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.button {
+  padding: 20px;
+  background-image: linear-gradient(to right bottom, rgb(215, 113, 113), rgb(224, 209, 135));
+  margin: 20px 0px 20px 20px;
+  border-radius: 5px;
+  color: aliceblue;
+  border: 2px transparent;
+  box-shadow: 5px 5px #eee;
+}

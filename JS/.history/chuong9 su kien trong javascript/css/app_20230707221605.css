@@ -106,7 +106,7 @@ body {
   color: transparent;
   background-image: linear-gradient(to right bottom, #ab2259, #dc8738);
   -webkit-background-clip: text;
-  background-clip: text;
+  /* background-clip: text; */
 }
 
 .counter button {

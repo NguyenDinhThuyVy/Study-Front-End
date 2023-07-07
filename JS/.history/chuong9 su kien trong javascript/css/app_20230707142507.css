@@ -64,13 +64,12 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 1;
-  background-color: #eed8d8;
 }
 
 .button {
   padding: 20px;
   background-image: linear-gradient(to right bottom, rgb(215, 113, 113), rgb(224, 209, 135));
-  margin: 50px auto;
+  margin: 20px 0px 20px 20px;
   border-radius: 5px;
   color: aliceblue;
   border: 2px solid;
@@ -78,45 +77,4 @@ body {
   width: 300px;
   font-family: "Poppins", sans-serif;
   display: block;
-}
-
-/* <!-- Bài 155  bài tập body chaging color random --> */
-.change {
-  display: block;
-  padding: 15px 40px;
-  border-radius: 20px;
-  border: 0;
-  color: aliceblue;
-  background-color: cadetblue;
-  margin: 40px auto;
-  font-family: "Poppins", sans-serif;
-}
-
-/* <!-- Bài 156 bải tập counter -->*/
-.counter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 50px;
-}
-
-.counter-number {
-  font-size: 100px;
-  margin: 0 10px;
-  color: transparent;
-  background-image: linear-gradient(to right bottom, #ab2259, #dc8738);
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
-.counter button {
-  width: 40px;
-  height: 40px;
-  background-color: #e99393;
-  border: 0;
-  color: white;
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
