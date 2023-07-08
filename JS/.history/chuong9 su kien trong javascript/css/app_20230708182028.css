@@ -253,7 +253,6 @@ body {
   align-items: center;
 }
 
-/* * là toàn bôj các selector bên trong header */
 .accordion-header * {
   pointer-events: none;
 }

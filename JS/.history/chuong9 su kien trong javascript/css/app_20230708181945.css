@@ -253,7 +253,6 @@ body {
   align-items: center;
 }
 
-/* * là toàn bôj các selector bên trong header */
 .accordion-header * {
   pointer-events: none;
 }
@@ -263,10 +262,10 @@ body {
   color: #333;
   font-size: 14px;
   font-weight: 300;
-  line-height: 1.6;
+  line-height: 2;
   background-color: rgb(239, 221, 221);
-  height: 0;
-  overflow: hidden;
+  /* height: 0; */
+  /* overflow: hidden; */
   transition: all 0.25s linear;
 }
 
