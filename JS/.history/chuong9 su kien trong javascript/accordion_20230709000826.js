@@ -8,11 +8,8 @@ function handleClickAccrodion(e) {
   const content = e.target.nextElementSibling;
   console.log(content.scrollHeight);
   // scrollHeight : chiều cao của phần tử bao gồm padding
-  content.style.height = `${content.scrollHeight}px`;
-  content.classList.toggle("is-active");
-  if (!content.classList.contains("is-active")) {
-    content.style.height = "0px";
-  }
+  content.style.height = `${content.scrollHeight}`;
+  e.target.nextElementSibling.classList.toggle("is-active");
   const icon = e.target.querySelector(".icon");
   icon.classList.toggle("fa-angle-down");
   icon.classList.toggle("fa-angle-up");
