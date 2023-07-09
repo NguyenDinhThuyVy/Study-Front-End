@@ -23,8 +23,10 @@ document.body.addEventListener("click", function (event) {
     const modal = document.querySelector(".modal");
     console.log(modal);
     modal.parentNode.removeChild(modal);
+    // modal.classList.remove("modal");
   } else if (event.target.matches(".modal")) {
     const modal = document.querySelector(".modal");
-    event.target.parentNode.removeChild(event.target);
+    modal.classList.remove("modal");
+    // event.target.parentNode.removeChild(event.target);
   }
 });
