@@ -422,7 +422,7 @@ body {
   top: 100%;
   left: 0;
   right: 0;
-  display: none;
+  /* display: none; */
   z-index: 10;
 }
 
@@ -467,7 +467,7 @@ body {
 .dropdown__item:first-child:before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 5px;
   left: 3rem;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;

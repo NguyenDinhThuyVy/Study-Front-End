@@ -422,7 +422,7 @@ body {
   top: 100%;
   left: 0;
   right: 0;
-  display: none;
+  /* display: none; */
   z-index: 10;
 }
 
@@ -444,7 +444,7 @@ body {
 .dropdown__item {
   width: 100%;
   padding: 2rem;
-  background-color: var(--primary);
+  /* background-color: var(--primary); */
   display: flex;
   align-items: center;
   justify-content: space-between;

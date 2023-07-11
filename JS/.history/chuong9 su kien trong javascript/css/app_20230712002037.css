@@ -422,7 +422,7 @@ body {
   top: 100%;
   left: 0;
   right: 0;
-  display: none;
+  /* display: none; */
   z-index: 10;
 }
 
@@ -469,7 +469,7 @@ body {
   position: absolute;
   top: 0;
   left: 3rem;
-  border-left: 10px solid transparent;
+  /* border-left: 10px solid transparent; */
   border-right: 10px solid transparent;
   border-bottom: 10px solid var(--primary);
   transform: translateY(-100%);

@@ -427,7 +427,7 @@ body {
 }
 
 .dropdown__list.show {
-  display: block;
+  /* display: block; */
 }
 
 .dropdown__list:before {

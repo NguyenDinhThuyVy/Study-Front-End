@@ -422,7 +422,7 @@ body {
   top: 100%;
   left: 0;
   right: 0;
-  display: none;
+  /* display: none; */
   z-index: 10;
 }
 
@@ -432,12 +432,12 @@ body {
 
 .dropdown__list:before {
   content: "";
-  height: 2.5rem;
+  /* height: 2.5rem; */
   position: absolute;
   left: 0;
   right: 0;
   background-color: transparent;
-  transform: translateY(-100%);
+  /* transform: translateY(-100%); */
 }
 
 .dropdown__select,

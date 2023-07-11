@@ -409,7 +409,7 @@ body {
 }
 
 .dropdown__select {
-  border-radius: inherit;
+  /* border-radius: inherit; */
 }
 
 .dropdown__select * {

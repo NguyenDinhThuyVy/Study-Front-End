@@ -422,7 +422,7 @@ body {
   top: 100%;
   left: 0;
   right: 0;
-  display: none;
+  /* display: none; */
   z-index: 10;
 }
 
@@ -473,7 +473,7 @@ body {
   border-right: 10px solid transparent;
   border-bottom: 10px solid var(--primary);
   transform: translateY(-100%);
-  transition: border-color 0.2s linear;
+  /* transition: border-color 0.2s linear; */
 }
 
 .dropdown__item:first-child:hover:before {
