@@ -496,17 +496,13 @@ body {
 
 /*      <!--  Bài tập 179 tooltip-->*/
 .text {
-  color: #bb4f40;
-  display: flex;
+  color: #3d6ef7;
+  display: block;
   font-size: 20px;
-  margin: 200px auto;
-  width: 250px;
-  height: 40px;
-  background-color: #f9cbb6;
+  margin: 150px auto;
+  width: 300px;
+  background-color: #e39db9;
   align-items: center;
-  justify-content: center;
-  border: 2px solid #dee9f4;
-  border-radius: 5px;
 }
 
 .tooltip {
@@ -515,13 +511,11 @@ body {
 
 .tooltip-text {
   position: fixed;
-  /* top: 0; */
-  /* left: 50%; */
-  transform: translate(80%, -130%);
-  background-color: #f9ba9c;
+  /* transform: translateX(-50%); */
+  background-color: #3d6ef7;
   padding: 10px 20px;
   display: block;
-  color: #ca4b3a;
+  color: white;
   border-radius: 20px;
 }
 
@@ -533,5 +527,5 @@ body {
   transform: translate(-50%, 100%);
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-top: 10px solid #f9ba9c;
+  border-top: 10px solid #3d6ef7;
 }

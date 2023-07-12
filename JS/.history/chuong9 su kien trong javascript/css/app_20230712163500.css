@@ -515,8 +515,8 @@ body {
 
 .tooltip-text {
   position: fixed;
-  /* top: 0; */
-  /* left: 50%; */
+  top: 0;
+  left: 50%;
   transform: translate(80%, -130%);
   background-color: #f9ba9c;
   padding: 10px 20px;

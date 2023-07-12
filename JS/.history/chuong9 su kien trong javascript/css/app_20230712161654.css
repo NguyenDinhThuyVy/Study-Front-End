@@ -515,9 +515,7 @@ body {
 
 .tooltip-text {
   position: fixed;
-  /* top: 0; */
-  /* left: 50%; */
-  transform: translate(80%, -130%);
+  /* transform: translateX(-50%); */
   background-color: #f9ba9c;
   padding: 10px 20px;
   display: block;
@@ -529,7 +527,7 @@ body {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 50%;
+  left: 80%;
   transform: translate(-50%, 100%);
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
