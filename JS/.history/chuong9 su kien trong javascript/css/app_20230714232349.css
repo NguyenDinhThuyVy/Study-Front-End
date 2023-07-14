@@ -537,10 +537,6 @@ body {
 }
 
 /* <!-- Bài 183 bài tập link hover --> */
-/* body {
-  background-color: #ff8876;
-} */
-
 .menu-web {
   position: fixed;
   display: flex;
@@ -548,15 +544,16 @@ body {
   left: 0;
   justify-content: space-between;
   align-items: center;
+  /* margin: 20px 20px; */
   width: 100%;
   padding: 10px 10%;
-  /* background-color: #ff8876; */
-  height: 50px;
+  background-color: #ff8876;
 }
 
 .menu-logo img {
-  width: 60px;
+  width: 80px;
   border-radius: 50%;
+  font-weight: 500;
 }
 
 .menu-toggle {

@@ -18,11 +18,4 @@ window.addEventListener("load", function () {
     tooltipDiv.style.width = `${width}px`;
     tooltipDiv.style.height = `${height}px`;
   });
-  text.addEventListener("mouseleave", function (e) {
-    const tooltip = document.querySelector(".tooltip-text");
-    if (!tooltip) {
-      return;
-    }
-    tooltip.parentNode.removeChild(tooltip);
-  });
 });

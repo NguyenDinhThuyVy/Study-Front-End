@@ -537,71 +537,8 @@ body {
 }
 
 /* <!-- Bài 183 bài tập link hover --> */
-/* body {
-  background-color: #ff8876;
-} */
-
-.menu-web {
-  position: fixed;
-  display: flex;
-  top: 0;
-  left: 0;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 10px 10%;
-  /* background-color: #ff8876; */
-  height: 50px;
-}
-
-.menu-logo img {
-  width: 60px;
-  border-radius: 50%;
-}
-
-.menu-toggle {
-  margin-left: 700px;
-}
-
 .menu-hover {
-  display: flex;
+  display: block;
   list-style: none;
+  margin: 25px auto;
 }
-
-.item-menu {
-  margin: 0 25px;
-}
-
-.menu1-link {
-  display: inline-block;
-  color: #ab2259;
-  position: relative;
-  font-size: 22px;
-  font-weight: 400;
-}
-
-.line-effect {
-  width: 0;
-  height: 2px;
-  background-color: #63110f;
-  position: fixed;
-  pointer-events: none;
-  transition: all 0.25s linear;
-}
-
-/* .menu1-link:before {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 100%;
-  height: 2.5px;
-  background-color: #63110f;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.menu1-link:hover:before {
-  opacity: 1;
-  visibility: visible;
-} */

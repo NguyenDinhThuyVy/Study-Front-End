@@ -12,17 +12,10 @@ window.addEventListener("load", function () {
     const { top, left, width, height } = cords;
     const tooltipHeight = tooltipDiv.offsetHeight;
     const triangleHeight = 20;
-    // const tooltipWidth = tooltipDiv.offsetWidth;
-    tooltipDiv.style.left = `${left}px`;
+    const tooltipWidth = tooltipDiv.offsetWidth;
+    tooltipDiv.style.left = `${left - tooltipWidt / 2}px`;
     tooltipDiv.style.top = `${top - tooltipHeight - triangleHeight}px`;
     tooltipDiv.style.width = `${width}px`;
     tooltipDiv.style.height = `${height}px`;
-  });
-  text.addEventListener("mouseleave", function (e) {
-    const tooltip = document.querySelector(".tooltip-text");
-    if (!tooltip) {
-      return;
-    }
-    tooltip.parentNode.removeChild(tooltip);
   });
 });

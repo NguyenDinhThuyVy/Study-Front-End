@@ -10,19 +10,7 @@ window.addEventListener("load", function () {
     const cords = e.target.getBoundingClientRect();
     // console.log(cords);
     const { top, left, width, height } = cords;
-    const tooltipHeight = tooltipDiv.offsetHeight;
-    const triangleHeight = 20;
-    // const tooltipWidth = tooltipDiv.offsetWidth;
     tooltipDiv.style.left = `${left}px`;
-    tooltipDiv.style.top = `${top - tooltipHeight - triangleHeight}px`;
-    tooltipDiv.style.width = `${width}px`;
-    tooltipDiv.style.height = `${height}px`;
-  });
-  text.addEventListener("mouseleave", function (e) {
-    const tooltip = document.querySelector(".tooltip-text");
-    if (!tooltip) {
-      return;
-    }
-    tooltip.parentNode.removeChild(tooltip);
+    tooltipDiv.style.top = `${top}px`;
   });
 });

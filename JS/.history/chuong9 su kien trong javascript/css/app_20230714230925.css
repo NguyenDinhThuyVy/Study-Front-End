@@ -537,10 +537,6 @@ body {
 }
 
 /* <!-- Bài 183 bài tập link hover --> */
-/* body {
-  background-color: #ff8876;
-} */
-
 .menu-web {
   position: fixed;
   display: flex;
@@ -548,24 +544,34 @@ body {
   left: 0;
   justify-content: space-between;
   align-items: center;
+  /* margin: 20px 20px; */
   width: 100%;
   padding: 10px 10%;
-  /* background-color: #ff8876; */
-  height: 50px;
 }
 
 .menu-logo img {
-  width: 60px;
+  width: 80px;
   border-radius: 50%;
+  font-weight: 500;
 }
 
 .menu-toggle {
-  margin-left: 700px;
+  /* align-items: flex-end; */
+  /* margin: 50px 50px; */
+  display: block;
+  margin-left: 300px;
+  border: 50px #e4740b;
 }
 
 .menu-hover {
-  display: flex;
+  display: inlien;
   list-style: none;
+  /* border: 5px #daab80; */
+  /* align-items: flex-end; */
+  /* margin: 50px auto;
+  align-items: center;
+  justify-content: center; */
+
 }
 
 .item-menu {
@@ -576,8 +582,7 @@ body {
   display: inline-block;
   color: #ab2259;
   position: relative;
-  font-size: 22px;
-  font-weight: 400;
+  font-size: 20px;
 }
 
 .line-effect {

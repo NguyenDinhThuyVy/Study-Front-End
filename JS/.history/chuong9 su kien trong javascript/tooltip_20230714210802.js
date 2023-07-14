@@ -23,6 +23,5 @@ window.addEventListener("load", function () {
     if (!tooltip) {
       return;
     }
-    tooltip.parentNode.removeChild(tooltip);
   });
 });

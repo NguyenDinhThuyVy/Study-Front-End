@@ -20,9 +20,5 @@ window.addEventListener("load", function () {
   });
   text.addEventListener("mouseleave", function (e) {
     const tooltip = document.querySelector(".tooltip-text");
-    if (!tooltip) {
-      return;
-    }
-    tooltip.parentNode.removeChild(tooltip);
   });
 });
