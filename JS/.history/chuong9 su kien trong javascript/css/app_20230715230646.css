@@ -652,13 +652,13 @@ body {
 
 .submit {
   padding: 20px;
-  background-color: #e7edb0;
+  background-color: #edb0b0;
   margin: 50px auto;
   border-radius: 5px;
-  color: rgb(8, 25, 40);
+  color: aliceblue;
   border: 2px solid;
   cursor: pointer;
-  width: 100px;
+  width: 150px;
   font-family: "Poppins", sans-serif;
   display: block;
 }

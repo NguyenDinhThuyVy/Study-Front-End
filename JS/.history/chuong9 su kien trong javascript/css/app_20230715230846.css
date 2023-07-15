@@ -53,7 +53,6 @@ img {
 }
 
 input,
-button,
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -651,14 +650,13 @@ body {
 }
 
 .submit {
-  padding: 20px;
-  background-color: #e7edb0;
-  margin: 50px auto;
+  /* padding: 20px; */
+  /* background-color: #e7edb0; */
+  /* margin: 50px auto;
   border-radius: 5px;
   color: rgb(8, 25, 40);
   border: 2px solid;
-  cursor: pointer;
   width: 100px;
   font-family: "Poppins", sans-serif;
-  display: block;
+  display: block; */
 }

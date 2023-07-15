@@ -16,7 +16,9 @@ html {
 input,
 textarea,
 select,
-button {}
+button {
+  outline: none;
+}
 
 input {
   line-height: normal;
@@ -24,7 +26,7 @@ input {
 
 label,
 button {
-  /* cursor: pointer; */
+  cursor: pointer;
 }
 
 a {
@@ -645,20 +647,6 @@ body {
   background-color: #efc2ba;
   color: #540604;
   font-size: 15px;
-  width: 250px;
+  width: 300px;
   margin: 50px auto;
-  display: block;
-}
-
-.submit {
-  padding: 20px;
-  background-color: #e7edb0;
-  margin: 50px auto;
-  border-radius: 5px;
-  color: rgb(8, 25, 40);
-  border: 2px solid;
-  cursor: pointer;
-  width: 100px;
-  font-family: "Poppins", sans-serif;
-  display: block;
 }
