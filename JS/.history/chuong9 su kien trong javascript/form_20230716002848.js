@@ -65,9 +65,8 @@ form.addEventListener("submit", function (e) {
   // console.log(this.elements["username"].value);
   const username = this.elements["username"].value;
   const gender = this.elements["gender"].value;
-  const hobby = this.querySelectorAll(`input[name="hobby"]`);
+  const hobby = this.querySelectorAll(`input[name="hooby"]`);
   let hobbyValues = [];
   [...hobby].forEach((item) => hobbyValues.push(item.value));
-  console.log(hobbyValues);
-  // console.log({ username, gender, hobbyValues });
+  console.log({ username, gender, hobbyValues });
 });

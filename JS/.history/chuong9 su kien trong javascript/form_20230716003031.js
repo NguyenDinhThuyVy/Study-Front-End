@@ -69,5 +69,5 @@ form.addEventListener("submit", function (e) {
   let hobbyValues = [];
   [...hobby].forEach((item) => hobbyValues.push(item.value));
   console.log(hobbyValues);
-  // console.log({ username, gender, hobbyValues });
+  console.log({ username, gender, hobbyValues });
 });
