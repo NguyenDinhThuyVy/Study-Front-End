@@ -638,30 +638,6 @@ body {
 
 /*
     <!-- Bài 190 Sự kiện Keydown của form --> */
-.form {
-  margin: 50px auto;
-  border: #333 solid 2px;
-  width: 500px;
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.43);
-  justify-content: center;
-  align-items: center;
-  box-shadow: rgba(218, 126, 126, 0.512) 0px 7px 29px 0px;
-}
-
-.title {
-  padding: 10px;
-  display: block;
-  width: 100%;
-  /* padding: 30px 200px 0; */
-  text-align: center;
-  /* justify-content: center;
-  align-items: center; */
-  /* padding: 20px auto 0; */
-  font-size: 30px;
-  color: #ab2259;
-}
-
 .input {
   padding: 10px;
   border: #400c07 solid 2px;
@@ -670,13 +646,13 @@ body {
   color: #540604;
   font-size: 15px;
   width: 300px;
-  margin: 30px auto 20px;
+  margin: 50px auto 20px;
   display: block;
 }
 
 .submit {
   padding: 20px;
-  background-color: #c1ccdd;
+  background-color: #6194dd;
   margin: 30px auto;
   border-radius: 5px;
   color: rgb(8, 25, 40);
@@ -685,47 +661,4 @@ body {
   width: 150px;
   font-family: "Poppins", sans-serif;
   display: block;
-}
-
-.password {
-  position: relative;
-}
-
-.toggle {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 120px;
-  cursor: pointer;
-}
-
-/*  <!-- Bài tập 200 highlight --> */
-.dropdown {
-  position: relative;
-  width: 600px;
-  padding: 20px;
-  background-color: #efe0e0;
-  box-shadow: rgba(218, 126, 126, 0.512) 0px 7px 29px;
-  margin: 30px auto;
-}
-
-.input-search {
-  width: 100%;
-  display: block;
-  font-size: 16px;
-  line-height: 1.5;
-  border: 2px solid #e5ebf1;
-  border-radius: 8px;
-  color: #540604;
-  background-color: #fef6f6;
-}
-
-.dropdown-item {
-  margin-top: 19px;
-  font-size: 18px;
-  color: #89342cc6
-}
-
-.pimary {
-  color: #e2e5eb;
 }

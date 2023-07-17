@@ -646,7 +646,7 @@ body {
   background-color: rgba(255, 255, 255, 0.43);
   justify-content: center;
   align-items: center;
-  box-shadow: rgba(218, 126, 126, 0.512) 0px 7px 29px 0px;
+  box-shadow: rgba(217, 146, 146, 0.474) 0px 7px 29px 0px;
 }
 
 .title {
@@ -685,47 +685,4 @@ body {
   width: 150px;
   font-family: "Poppins", sans-serif;
   display: block;
-}
-
-.password {
-  position: relative;
-}
-
-.toggle {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 120px;
-  cursor: pointer;
-}
-
-/*  <!-- Bài tập 200 highlight --> */
-.dropdown {
-  position: relative;
-  width: 600px;
-  padding: 20px;
-  background-color: #efe0e0;
-  box-shadow: rgba(218, 126, 126, 0.512) 0px 7px 29px;
-  margin: 30px auto;
-}
-
-.input-search {
-  width: 100%;
-  display: block;
-  font-size: 16px;
-  line-height: 1.5;
-  border: 2px solid #e5ebf1;
-  border-radius: 8px;
-  color: #540604;
-  background-color: #fef6f6;
-}
-
-.dropdown-item {
-  margin-top: 19px;
-  font-size: 18px;
-  color: #89342cc6
-}
-
-.pimary {
-  color: #e2e5eb;
 }

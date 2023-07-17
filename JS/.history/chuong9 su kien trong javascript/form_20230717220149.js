@@ -72,20 +72,9 @@ form.addEventListener("submit", function (e) {
   // console.log(hobbyValues);
   // console.log({ username, gender, hobbyValues });
 
-  // phần Validation
-  const username = this.elements["username"].value;
-  const password = this.elements["password"].value;
-  if (!username) {
-    alert("Please enter your username");
-    return;
-  }
-  if (!password) {
-    alert("Please enter your password");
-    return;
-  }
-  if (password.length < 5) {
-    alert("Password so short");
-  }
+  // phần Valodation
+  const username = this.element["username"].value;
+  const password = this.element["password"].value;
 });
 
 // 8.Validation

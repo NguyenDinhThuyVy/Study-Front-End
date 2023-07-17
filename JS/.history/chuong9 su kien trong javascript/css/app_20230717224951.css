@@ -702,11 +702,11 @@ body {
 /*  <!-- Bài tập 200 highlight --> */
 .dropdown {
   position: relative;
-  width: 600px;
+  width: 500px;
   padding: 20px;
-  background-color: #efe0e0;
+  background-color: #dcd4d4;
   box-shadow: rgba(218, 126, 126, 0.512) 0px 7px 29px;
-  margin: 30px auto;
+  margin: 20px auto;
 }
 
 .input-search {
@@ -714,18 +714,8 @@ body {
   display: block;
   font-size: 16px;
   line-height: 1.5;
-  border: 2px solid #e5ebf1;
+  border: 2px soild #437fb8;
   border-radius: 8px;
-  color: #540604;
-  background-color: #fef6f6;
-}
+  background-color: #fffefe;
 
-.dropdown-item {
-  margin-top: 19px;
-  font-size: 18px;
-  color: #89342cc6
-}
-
-.pimary {
-  color: #e2e5eb;
 }

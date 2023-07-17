@@ -58,34 +58,18 @@ form.addEventListener("submit", function (e) {
   // if (input.value === "") {
   //   alert("you can't make empty input");
   // }
-
   // this, e.target -> chọn ra slector mà chúng ta đang add sự kiện
   // console.log(this);
   // console.log(e.target);
   // this.element
   // console.log(this.elements["username"].value);
-  // const username = this.elements["username"].value;
-  // const gender = this.elements["gender"].value;
-  // const hobby = this.querySelectorAll(`input[name="hobby"]`);
-  // let hobbyValues = [];
-  // [...hobby].forEach((item) => hobbyValues.push(item.value));
-  // console.log(hobbyValues);
-  // console.log({ username, gender, hobbyValues });
-
-  // phần Validation
   const username = this.elements["username"].value;
-  const password = this.elements["password"].value;
-  if (!username) {
-    alert("Please enter your username");
-    return;
-  }
-  if (!password) {
-    alert("Please enter your password");
-    return;
-  }
-  if (password.length < 5) {
-    alert("Password so short");
-  }
+  const gender = this.elements["gender"].value;
+  const hobby = this.querySelectorAll(`input[name="hobby"]`);
+  let hobbyValues = [];
+  [...hobby].forEach((item) => hobbyValues.push(item.value));
+  console.log(hobbyValues);
+  // console.log({ username, gender, hobbyValues });
 });
 
 // 8.Validation

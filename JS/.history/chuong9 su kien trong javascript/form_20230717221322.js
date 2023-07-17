@@ -83,9 +83,6 @@ form.addEventListener("submit", function (e) {
     alert("Please enter your password");
     return;
   }
-  if (password.length < 5) {
-    alert("Password so short");
-  }
 });
 
 // 8.Validation
