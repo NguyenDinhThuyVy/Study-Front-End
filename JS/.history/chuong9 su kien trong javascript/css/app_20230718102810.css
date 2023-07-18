@@ -16,9 +16,7 @@ html {
 input,
 textarea,
 select,
-button {
-  outline: none;
-}
+button {}
 
 input {
   line-height: normal;
@@ -26,17 +24,13 @@ input {
 
 label,
 button {
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 a {
   text-decoration: none;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
 
 *,
 *:before,
@@ -58,12 +52,14 @@ img {
   max-width: 100%;
 }
 
+input,
+button,
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-color: #eed8d8;
 }
-
 
 .button {
   padding: 20px;
@@ -717,7 +713,7 @@ body {
   width: 100%;
   display: block;
   font-size: 16px;
-  line-height: 1.0;
+  line-height: 1.5;
   border: 2px solid #f8eaea;
   border-radius: 8px;
   color: #540604;
@@ -727,100 +723,9 @@ body {
 .dropdown-item {
   margin-top: 19px;
   font-size: 18px;
-  color: #821b1b;
+  color: #89342cc6
 }
 
 .pimary {
-  color: #ca6258c6;
-}
-
-/*     <!-- Bài 205 giới thiệu sự kiện scroll --> */
-/* body {
-  height: 500vh;
-}
-
-.boxed {
-  height: 200px;
-  width: 250px;
-  background-color: #e57e59;
-  margin: 20px auto;
-  border-radius: 3px;
-  overflow-y: auto;
-} */
-
-/* .boxed-content {
-  height: 600px;
-  width: 600px;
-} */
-
-/*      <!-- Bài 211 Fixed Header-->*/
-
-.headers {
-  background-color: #213033;
-  padding: 25px;
-  transition: all 0.2s linear;
-}
-
-.headers.is-fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-  animation: fade 0.25s forwards 1;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-
-.banner {
-  width: 100%;
-  height: 100vh;
-  background: url("https://images.unsplash.com/photo-1520809172979-fe0577816d28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80") no-repeat center / cover;
-}
-
-.content {
-  height: 200vh;
-}
-
-.menus {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.menu-items {
-  margin: 0 35px;
-}
-
-.menu-links {
-  color: #f6ebeb;
-  font-weight: 300;
-  display: block;
-  font-size: 20px;
-  transition: 0.3s;
-}
-
-.menu-items a:hover {
-  color: #E25B61;
-}
-
-.progress {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background-color: #ff8876;
-  width: 0;
-  transition: all 0.2s linear;
+  color: #6f96e3;
 }

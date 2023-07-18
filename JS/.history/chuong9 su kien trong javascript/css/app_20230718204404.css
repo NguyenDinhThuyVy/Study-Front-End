@@ -13,30 +13,16 @@ html {
   box-sizing: border-box;
 }
 
-input,
-textarea,
-select,
-button {
-  outline: none;
-}
 
 input {
   line-height: normal;
 }
 
-label,
-button {
-  cursor: pointer;
-}
 
 a {
   text-decoration: none;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
 
 *,
 *:before,
@@ -58,12 +44,14 @@ img {
   max-width: 100%;
 }
 
+input,
+button,
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-color: #eed8d8;
 }
-
 
 .button {
   padding: 20px;
@@ -735,7 +723,7 @@ body {
 }
 
 /*     <!-- Bài 205 giới thiệu sự kiện scroll --> */
-/* body {
+body {
   height: 500vh;
 }
 
@@ -746,7 +734,7 @@ body {
   margin: 20px auto;
   border-radius: 3px;
   overflow-y: auto;
-} */
+}
 
 /* .boxed-content {
   height: 600px;
@@ -755,13 +743,13 @@ body {
 
 /*      <!-- Bài 211 Fixed Header-->*/
 
-.headers {
-  background-color: #213033;
+.header {
+  background-color: white;
   padding: 25px;
   transition: all 0.2s linear;
 }
 
-.headers.is-fixed {
+.header.is-fixed {
   position: fixed;
   top: 0;
   left: 0;
@@ -780,47 +768,29 @@ body {
   }
 }
 
-
 .banner {
   width: 100%;
   height: 100vh;
-  background: url("https://images.unsplash.com/photo-1520809172979-fe0577816d28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80") no-repeat center / cover;
+  background: url(https://images.unsplash.com/photo-1533481405265-e9ce0c044abb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2hvcHBpbmclMjBtYWxsfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60") no-repeat center / cover;
 }
 
 .content {
   height: 200vh;
 }
 
-.menus {
+.menu {
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.menu-items {
-  margin: 0 35px;
+.menu-item {
+  margin: 0 25px;
 }
 
-.menu-links {
-  color: #f6ebeb;
+.menu-link {
+  color: #333;
   font-weight: 300;
   display: block;
-  font-size: 20px;
-  transition: 0.3s;
-}
-
-.menu-items a:hover {
-  color: #E25B61;
-}
-
-.progress {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background-color: #ff8876;
-  width: 0;
-  transition: all 0.2s linear;
 }

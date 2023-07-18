@@ -2,7 +2,6 @@ window.addEventListener("load", function () {
   const input = document.querySelector(".input-search");
   const items = document.querySelectorAll(".dropdown-item");
   input.addEventListener("input", handleHighligh);
-  // input sẽ lấy value mỗi khi chúng ta gõ
   // let filter = "";
   function handleHighligh(e) {
     // console.log(e.key);
