@@ -58,8 +58,6 @@ img {
   max-width: 100%;
 }
 
-button,
-input,
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -908,62 +906,4 @@ i.disabled {
   padding: 25px;
   margin: 25px auto;
   max-width: 600px;
-}
-
-.todo-form {
-  width: 100%;
-  display: flex;
-}
-
-.todo-submit {
-  padding: 15px;
-  border: 0;
-  background-color: #ecbcbc;
-  color: #540604;
-  font-size: 18px;
-  border-radius: 0 10px 10px 0;
-  flex-shrink: 0;
-}
-
-.todo-input {
-  width: 70%;
-  border: #edc2c2 solid 3px;
-  padding: 15px;
-  border-radius: 10px 0 0 10px;
-  font-size: 16px;
-}
-
-.todo-item {
-  width: 81%;
-  margin-top: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 0;
-}
-
-.todo-text {
-  flex: 1;
-  font-weight: 300;
-  color: #2c0909;
-  display: inline-block;
-  padding-left: 5px;
-  white-space: nowrap;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  line-height: 1.4;
-}
-
-.todo-remove {
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background-color: #9f1831;
-  color: white;
-  border-radius: 4px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

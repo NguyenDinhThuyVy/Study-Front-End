@@ -934,12 +934,11 @@ i.disabled {
 }
 
 .todo-item {
-  width: 81%;
+  width: 80%;
   margin-top: 15px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 .todo-text {
