@@ -90,7 +90,7 @@ body {
 
 .input-wrapper {
   position: relative;
-  width: 350px;
+  width: 300px;
   margin: 25px auto;
 }
 
@@ -105,7 +105,7 @@ body {
 }
 
 .input-icons i {
-  color: rgb(243, 243, 243);
+  color: rgb(204, 136, 136);
   width: 20px;
   height: 20px;
   border-radius: 20px;
@@ -113,46 +113,17 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 10px;
-  opacity: 0;
+  /* opacity: 0;
   visibility: hidden;
-  transform: scale(0);
+  transform: scale(0); */
   transition: all 0.2s ease;
   position: absolute;
 }
 
 .fa-check {
-  background-color: #065a2b;
-  /* z-index: 1; */
+  background-color: #098163;
 }
 
 .fa-times {
-  background-color: #951e1e;
-  /* z-index: 0; */
-}
-
-/*     <!-- Bài 242 password validation --> */
-.check-list {
-  margin-top: 25px;
-  font-size: 16px;
-  font-weight: 350;
-  color: #8f8b8b;
-  padding-left: 20px;
-}
-
-.check-item {
-  margin-bottom: 15px;
-}
-
-.check-item.active {
-  color: #13b768f7;
-}
-
-.check-item.unactive {
-  color: rgba(207, 42, 42, 0.838);
-}
-
-.check-item i {
-  font-size: 12px;
-  color: inherit;
-  margin-right: 10px;
+  background-color: #6d241a;
 }

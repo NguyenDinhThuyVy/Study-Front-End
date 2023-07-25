@@ -64,7 +64,6 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 1;
-  background-color: #e6b2b243;
 }
 
 /*    <!-- Bài 239 email validation -->  */
@@ -77,7 +76,7 @@ body {
   color: #333;
   font-family: "Poppins", sans-serif;
   display: block;
-  box-shadow: rgba(95, 25, 7, 0.327) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   width: 100%;
 }
 
@@ -90,7 +89,7 @@ body {
 
 .input-wrapper {
   position: relative;
-  width: 350px;
+  width: 300px;
   margin: 25px auto;
 }
 
@@ -105,7 +104,7 @@ body {
 }
 
 .input-icons i {
-  color: rgb(243, 243, 243);
+  color: white;
   width: 20px;
   height: 20px;
   border-radius: 20px;
@@ -113,46 +112,17 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 10px;
-  opacity: 0;
-  visibility: hidden;
+  /* opacity: 0;
+  visibility: hidden; */
   transform: scale(0);
   transition: all 0.2s ease;
   position: absolute;
 }
 
 .fa-check {
-  background-color: #065a2b;
-  /* z-index: 1; */
+  background-color: #20e3b2;
 }
 
 .fa-times {
-  background-color: #951e1e;
-  /* z-index: 0; */
-}
-
-/*     <!-- Bài 242 password validation --> */
-.check-list {
-  margin-top: 25px;
-  font-size: 16px;
-  font-weight: 350;
-  color: #8f8b8b;
-  padding-left: 20px;
-}
-
-.check-item {
-  margin-bottom: 15px;
-}
-
-.check-item.active {
-  color: #13b768f7;
-}
-
-.check-item.unactive {
-  color: rgba(207, 42, 42, 0.838);
-}
-
-.check-item i {
-  font-size: 12px;
-  color: inherit;
-  margin-right: 10px;
+  background-color: #fc5776;
 }

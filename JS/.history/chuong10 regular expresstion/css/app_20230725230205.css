@@ -90,7 +90,7 @@ body {
 
 .input-wrapper {
   position: relative;
-  width: 350px;
+  width: 300px;
   margin: 25px auto;
 }
 
@@ -133,10 +133,9 @@ body {
 /*     <!-- Bài 242 password validation --> */
 .check-list {
   margin-top: 25px;
-  font-size: 16px;
-  font-weight: 350;
-  color: #8f8b8b;
-  padding-left: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #999;
 }
 
 .check-item {
@@ -144,11 +143,11 @@ body {
 }
 
 .check-item.active {
-  color: #13b768f7;
+  color: #20e3b2;
 }
 
 .check-item.unactive {
-  color: rgba(207, 42, 42, 0.838);
+  color: #f00;
 }
 
 .check-item i {

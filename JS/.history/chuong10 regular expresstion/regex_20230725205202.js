@@ -52,41 +52,7 @@ re3.test("hi"); //true
 
 // 5.Quantifiers: {n} {n,m} + ? *
 // string.match(regex)  "abc".match(/\w/) -> []
-const str1 = "welcome to 2023222";
+const str1 = "welcome to 2023";
 console.log(str1.match(/\d/)[0]); // số 2
-//  sử dụng  {n} : số lượng nhất định
-console.log(str1.match(/\d{4}/)[0]); // số 2023
-//  {n,m} : số lượng trong khoảng từ n đến m
-console.log(str1.match(/\d{4,6}/)[0]); // số 202322
-// + : lấy 1 hoặc nhiều kí tự thỏa điều kiện
-console.log(str1.match(/\d+/)[0]);
-const str2 = "color or colour or color2?";
-// ?: đẻ phía sau phần tử đó để xét rằng phần tử nớ  có thể có hoặc không có kí tự nào đó
-console.log(str2.match(/colou?r2?/g)); // ["color", "colour" ,"color2"]
-// flag
-// g: global lấy nhiều giá trị
-// i: case insensitive không phân biệt hoa thường
-// m: multipe lines tích hợp khi sử dụng nhiều hàng
-// *: không có hoặc là có nhiều
-const str3 = "123456";
-console.log(str3.match(/\d+/g)); //['123456', '']
-
-// 6.group()
-/(\d{3})(\w+)/.test("123"); //true
-
-// 7. Escaping \ / [ ] ( ) { } ? + * | . ^ $
-/\?/.test("?");
-/\*/.test("*");
-
-// 8. Boundaries \b \B
-// \b  lấy chữ nớ khi từ nớ đứng một mình
-"my name is evondev".match(/\bevondev/g); //["evondev"]
-// \B lấy chữ nớ khi từ nớ không  đứng một mình
-"my name isevondev".match(/\Bevondev/g);
-
-// 9.
-const str4 = "hello welcome hello to my hello";
-console.log(str4.replace("hello", "evondev")); // evondev welcome hello to my hello
-// string.replace(regex, value);
-console.log(str4.replace(/hello/g, "evondev")); // evondev welcome evondev to my evondev
-"welcome 1234567".match(/\d+/g);
+//  sử dụng  {n}
+console.log(str1.match(/\d{4}/)); // số 2023

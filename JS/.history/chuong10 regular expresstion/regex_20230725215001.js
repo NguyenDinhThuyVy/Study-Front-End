@@ -88,5 +88,5 @@ console.log(str3.match(/\d+/g)); //['123456', '']
 const str4 = "hello welcome hello to my hello";
 console.log(str4.replace("hello", "evondev")); // evondev welcome hello to my hello
 // string.replace(regex, value);
-console.log(str4.replace(/hello/g, "evondev")); // evondev welcome evondev to my evondev
+str4.replace(/hello/g, "evondev");
 "welcome 1234567".match(/\d+/g);

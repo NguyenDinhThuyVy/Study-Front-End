@@ -72,21 +72,4 @@ const str3 = "123456";
 console.log(str3.match(/\d+/g)); //['123456', '']
 
 // 6.group()
-/(\d{3})(\w+)/.test("123"); //true
-
-// 7. Escaping \ / [ ] ( ) { } ? + * | . ^ $
-/\?/.test("?");
-/\*/.test("*");
-
-// 8. Boundaries \b \B
-// \b  lấy chữ nớ khi từ nớ đứng một mình
-"my name is evondev".match(/\bevondev/g); //["evondev"]
-// \B lấy chữ nớ khi từ nớ không  đứng một mình
-"my name isevondev".match(/\Bevondev/g);
-
-// 9.
-const str4 = "hello welcome hello to my hello";
-console.log(str4.replace("hello", "evondev")); // evondev welcome hello to my hello
-// string.replace(regex, value);
-console.log(str4.replace(/hello/g, "evondev")); // evondev welcome evondev to my evondev
-"welcome 1234567".match(/\d+/g);
+/(\d{3})?(\w+)/.test("123"); //false

@@ -148,7 +148,7 @@ body {
 }
 
 .check-item.unactive {
-  color: rgba(207, 42, 42, 0.838);
+  color: #f00;
 }
 
 .check-item i {

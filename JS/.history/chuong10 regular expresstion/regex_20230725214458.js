@@ -79,14 +79,7 @@ console.log(str3.match(/\d+/g)); //['123456', '']
 /\*/.test("*");
 
 // 8. Boundaries \b \B
-// \b  lấy chữ nớ khi từ nớ đứng một mình
+// \b
 "my name is evondev".match(/\bevondev/g); //["evondev"]
-// \B lấy chữ nớ khi từ nớ không  đứng một mình
+// \B
 "my name isevondev".match(/\Bevondev/g);
-
-// 9.
-const str4 = "hello welcome hello to my hello";
-console.log(str4.replace("hello", "evondev")); // evondev welcome hello to my hello
-// string.replace(regex, value);
-console.log(str4.replace(/hello/g, "evondev")); // evondev welcome evondev to my evondev
-"welcome 1234567".match(/\d+/g);
