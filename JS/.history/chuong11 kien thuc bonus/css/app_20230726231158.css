@@ -159,7 +159,7 @@ h3 {
   /* justify-content: center;
   align-items: center; */
   display: flex;
-  /* background-color: #fbdddd; */
+  background-color: #fbdddd;
   width: 100%;
   max-width: 600px;
   border-radius: 4px;
@@ -190,7 +190,7 @@ h3 {
 }
 
 .text {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 300;
   color: #972440;
 }

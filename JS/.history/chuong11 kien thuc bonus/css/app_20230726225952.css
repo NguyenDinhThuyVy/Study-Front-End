@@ -132,13 +132,19 @@ body {
 .header {
   display: flex;
   width: 300px;
+  justify-content: center;
+  align-items: center;
   margin: 30px auto;
+  border: #470b1a solid 2px;
 }
 
 h3 {
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   font-size: 40px;
   font-weight: 800;
+  height: 100%;
 }
 
 .black {
@@ -159,38 +165,10 @@ h3 {
   /* justify-content: center;
   align-items: center; */
   display: flex;
-  /* background-color: #fbdddd; */
+  background-color: #fff;
   width: 100%;
   max-width: 600px;
   border-radius: 4px;
   padding: 25px;
   margin: 150px auto;
-}
-
-.countdown li {
-  text-align: center;
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 20px;
-}
-
-.number,
-.text {
-  line-height: 1;
-}
-
-.number {
-  font-size: 70px;
-  margin-bottom: 10px;
-  background: linear-gradient(to right, #60c7c7 0%, #3d1c65 100%);
-  color: transparent;
-  -webkit-background-clip: text;
-}
-
-.text {
-  font-size: 25px;
-  font-weight: 300;
-  color: #972440;
 }

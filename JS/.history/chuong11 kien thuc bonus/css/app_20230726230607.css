@@ -159,7 +159,7 @@ h3 {
   /* justify-content: center;
   align-items: center; */
   display: flex;
-  /* background-color: #fbdddd; */
+  background-color: #fbdddd;
   width: 100%;
   max-width: 600px;
   border-radius: 4px;
@@ -184,13 +184,12 @@ h3 {
 .number {
   font-size: 70px;
   margin-bottom: 10px;
-  background: linear-gradient(to right, #60c7c7 0%, #3d1c65 100%);
-  color: transparent;
-  -webkit-background-clip: text;
+  background-image: linear-gradient(-90deg, #F5A6BA, #110206bc);
+  color: #972440;
 }
 
 .text {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 300;
   color: #972440;
 }

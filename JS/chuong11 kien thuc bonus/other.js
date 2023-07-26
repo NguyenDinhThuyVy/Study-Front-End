@@ -1,0 +1,27 @@
+// removeEventListener
+const button = document.querySelector(".button");
+function handleMouseMove(e) {
+  // console.log("yeu");
+}
+document.addEventListener("mousemove", handleMouseMove);
+button.addEventListener("click", function () {
+  document.removeEventListener("mousemove", handleMouseMove);
+});
+
+function handleClick() {
+  console.log("clicked1");
+}
+function handleClick2() {
+  console.log("clicked2");
+}
+// event handler
+// onclick: chấp nhận 1 event handler
+// button.onclick = handleClick;
+// button.onclick = handleClick2;
+// addEventListener: chấp nhận nhiều event handler cùng lúc
+// button.addEventListener("click", handleClick);
+button.addEventListener("click", handleClick2, {
+  // chỉ chạy 1 lần duy nhất
+  once: true,
+});
+// onmousemove, onmousedown

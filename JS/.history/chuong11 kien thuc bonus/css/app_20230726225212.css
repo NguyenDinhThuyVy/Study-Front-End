@@ -131,66 +131,41 @@ body {
 
 .header {
   display: flex;
-  width: 300px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
   margin: 30px auto;
 }
 
 h3 {
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  /* margin: 30px auto;
   font-size: 40px;
   font-weight: 800;
+  width: 300px; */
+  /* background-image: linear-gradient(90deg, #dc6885, #020006);
+  color: linear-gradient(-90deg, #dc6885, #0b011ac2); */
 }
 
 .black {
-  background-color: #F5A6BA;
-  width: 100%;
-  border-radius: 5px 0px 0px 5px;
-  color: #110206bc;
+  background-color: #dc6885;
 }
 
 .pink {
-  background-color: #110206bc;
-  color: #F5A6BA;
-  width: 100%;
-  border-radius: 0px 5px 5px 0px;
+  background-color: #dc6885;
+  margin-left: 5px;
 }
 
 .countdown {
   /* justify-content: center;
   align-items: center; */
   display: flex;
-  /* background-color: #fbdddd; */
+  background-color: #fff;
   width: 100%;
   max-width: 600px;
   border-radius: 4px;
   padding: 25px;
   margin: 150px auto;
-}
-
-.countdown li {
-  text-align: center;
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 20px;
-}
-
-.number,
-.text {
-  line-height: 1;
-}
-
-.number {
-  font-size: 70px;
-  margin-bottom: 10px;
-  background: linear-gradient(to right, #60c7c7 0%, #3d1c65 100%);
-  color: transparent;
-  -webkit-background-clip: text;
-}
-
-.text {
-  font-size: 25px;
-  font-weight: 300;
-  color: #972440;
 }

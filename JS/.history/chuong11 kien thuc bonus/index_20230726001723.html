@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chuong 11 Kien thuc Bonus</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+    />
+    <!-- Nếu để thẻ script ở đây sẽ dẫn đến hiện tưởng blocking page -> tạo ra giá trị null vì khi log web chạy bên file js trước rồi mới đến css và html -->
+    <!-- mục đích thêm defer: null blocking page để báo trình duyệt laf không cần đợi và load những cái DOM phía dưới-->
+    <!-- 100kb -->
+    <!--    <script defer src="other1.js"></script> -->
+    <!-- 2kb -->
+    <!--    <script defer src="other2.js"></script> -->
+    <!-- mục đích là đề other 1 load trước xong rồi other 2 mới load -->
+    <!-- async : null blocking page nó load độc lập không phụ thuộc vào các bên DOM hay các thư viện-->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body>
+    <h3>Say Hi</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. A, laboriosam
+      error dolor dignissimos aliquam mollitia molestiae quibusdam provident
+      voluptatum, rem recusandae consequuntur in eligendi aut laudantium, cum
+      nesciunt. Laboriosam, accusantium?
+    </p>
+    <script src="other.js"></script>
+  </body>
+</html>

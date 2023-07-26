@@ -129,68 +129,24 @@ body {
   background-image: linear-gradient(to bottom, #BFDDE9, #E8D1E0);
 }
 
-.header {
-  display: flex;
-  width: 300px;
-  margin: 30px auto;
-}
-
 h3 {
-  flex-direction: column;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
   font-size: 40px;
   font-weight: 800;
-}
-
-.black {
-  background-color: #F5A6BA;
-  width: 100%;
-  border-radius: 5px 0px 0px 5px;
-  color: #110206bc;
-}
-
-.pink {
-  background-color: #110206bc;
-  color: #F5A6BA;
-  width: 100%;
-  border-radius: 0px 5px 5px 0px;
+  background-image: linear-gradient(to right, #F6A8BB);
 }
 
 .countdown {
   /* justify-content: center;
   align-items: center; */
   display: flex;
-  /* background-color: #fbdddd; */
+  background-color: #fff;
   width: 100%;
   max-width: 600px;
   border-radius: 4px;
   padding: 25px;
   margin: 150px auto;
-}
-
-.countdown li {
-  text-align: center;
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 20px;
-}
-
-.number,
-.text {
-  line-height: 1;
-}
-
-.number {
-  font-size: 70px;
-  margin-bottom: 10px;
-  background: linear-gradient(to right, #60c7c7 0%, #3d1c65 100%);
-  color: transparent;
-  -webkit-background-clip: text;
-}
-
-.text {
-  font-size: 25px;
-  font-weight: 300;
-  color: #972440;
 }

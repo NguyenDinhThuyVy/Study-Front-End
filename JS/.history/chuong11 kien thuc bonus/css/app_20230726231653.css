@@ -168,7 +168,7 @@ h3 {
 }
 
 .countdown li {
-  text-align: center;
+  /* text-align: center; */
   width: 25%;
   display: flex;
   flex-direction: column;
@@ -190,7 +190,7 @@ h3 {
 }
 
 .text {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 300;
   color: #972440;
 }
