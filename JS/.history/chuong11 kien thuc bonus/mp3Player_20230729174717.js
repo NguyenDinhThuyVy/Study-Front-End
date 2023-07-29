@@ -5,7 +5,7 @@ window.addEventListener("load", function () {
   const nextButton = document.querySelector(".player-next");
   const playerduration = document.querySelector(".player-duration");
   const remaining = document.querySelector(".player-remaining");
-  const progessBar = document.querySelector("#progress-bar");
+  const range = document.querySelector("#progress-bar");
   const playerImage = document.querySelector(".player-image");
   const name = document.querySelector(".name");
   let playing = true;
@@ -18,9 +18,9 @@ window.addEventListener("load", function () {
   prevButton.addEventListener("click", function (e) {
     handleChangeMusic(-1);
   });
-  song.addEventListener("ended", function () {
-    handleChangeMusic(1);
-  });
+  // song.addEventListener("ended", function () {
+  //   handleChangeMusic(1);
+  // });
   // song.duration -> fulltime of song
   function handleChangeMusic(dir) {
     if (dir === 1) {
@@ -59,12 +59,12 @@ window.addEventListener("load", function () {
     }
   }
   function displayTimer() {
+    // console.log(song.duration);
+    // const duration = song.duration;
+    // const currentTime = song.currentTime;
     const { duration, currentTime } = song;
-    progessBar.max = duration;
-    progessBar.value = currentTime;
-    remaining.textContent = formatTimer(currentTime);
-    if (!duration) {
-      playerduration.textContent = "00:00";
+    if (playerduration.textContent.includes("NaN:NaN")) {
+      playerduration.textContent = "0:00";
     } else {
       playerduration.textContent = formatTimer(duration);
     }
@@ -74,8 +74,5 @@ window.addEventListener("load", function () {
     const seconds = Math.floor(second) - minutes * 60;
     return `0${minutes}`.slice(-2) + `:` + `0${seconds}`.slice(-2);
   }
-  progessBar.addEventListener("change", function (e) {
-    song.currentTime = progessBar.value;
-  });
   const timer = this.setInterval(displayTimer, 1000);
 });

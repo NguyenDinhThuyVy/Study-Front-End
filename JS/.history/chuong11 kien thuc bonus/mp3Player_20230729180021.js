@@ -18,9 +18,9 @@ window.addEventListener("load", function () {
   prevButton.addEventListener("click", function (e) {
     handleChangeMusic(-1);
   });
-  song.addEventListener("ended", function () {
-    handleChangeMusic(1);
-  });
+  // song.addEventListener("ended", function () {
+  //   handleChangeMusic(1);
+  // });
   // song.duration -> fulltime of song
   function handleChangeMusic(dir) {
     if (dir === 1) {
@@ -61,7 +61,6 @@ window.addEventListener("load", function () {
   function displayTimer() {
     const { duration, currentTime } = song;
     progessBar.max = duration;
-    progessBar.value = currentTime;
     remaining.textContent = formatTimer(currentTime);
     if (!duration) {
       playerduration.textContent = "00:00";
@@ -74,8 +73,5 @@ window.addEventListener("load", function () {
     const seconds = Math.floor(second) - minutes * 60;
     return `0${minutes}`.slice(-2) + `:` + `0${seconds}`.slice(-2);
   }
-  progessBar.addEventListener("change", function (e) {
-    song.currentTime = progessBar.value;
-  });
   const timer = this.setInterval(displayTimer, 1000);
 });

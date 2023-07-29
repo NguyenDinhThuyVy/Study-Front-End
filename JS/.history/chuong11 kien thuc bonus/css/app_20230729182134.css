@@ -399,7 +399,7 @@ h3 {
   /* color: #972440; */
 }
 
-
+/*
 .bar::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
@@ -408,8 +408,7 @@ h3 {
   border-radius: 100rem;
   background-color: #e38181;
   box-shadow: 0 0 0 5px white, 0 0 0 6px #ccc;
-}
-
+} */
 
 .bar::-moz-range-thumb {
   -webkit-appearance: none;
@@ -421,6 +420,13 @@ h3 {
   box-shadow: 0 0 0 5px white, 0 0 0 6px #ccc;
 }
 
+/* .bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  background-color: #e38181;
+} */
 
 .name {
   display: flex;

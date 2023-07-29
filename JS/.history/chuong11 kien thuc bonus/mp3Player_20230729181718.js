@@ -18,9 +18,9 @@ window.addEventListener("load", function () {
   prevButton.addEventListener("click", function (e) {
     handleChangeMusic(-1);
   });
-  song.addEventListener("ended", function () {
-    handleChangeMusic(1);
-  });
+  // song.addEventListener("ended", function () {
+  //   handleChangeMusic(1);
+  // });
   // song.duration -> fulltime of song
   function handleChangeMusic(dir) {
     if (dir === 1) {

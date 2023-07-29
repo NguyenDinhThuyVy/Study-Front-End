@@ -411,6 +411,7 @@ h3 {
 }
 
 
+
 .bar::-moz-range-thumb {
   -webkit-appearance: none;
   cursor: pointer;

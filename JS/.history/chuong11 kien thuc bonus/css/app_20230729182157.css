@@ -410,7 +410,6 @@ h3 {
   box-shadow: 0 0 0 5px white, 0 0 0 6px #ccc;
 }
 
-
 .bar::-moz-range-thumb {
   -webkit-appearance: none;
   cursor: pointer;
@@ -421,6 +420,13 @@ h3 {
   box-shadow: 0 0 0 5px white, 0 0 0 6px #ccc;
 }
 
+/* .bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  background-color: #e38181;
+} */
 
 .name {
   display: flex;
