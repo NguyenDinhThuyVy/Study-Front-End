@@ -1,0 +1,163 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
+input {
+  line-height: normal;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* using rem unit */
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+body {
+  font-size: 16px;
+  line-height: 1;
+}
+
+body {
+  font-family: 'Borel', cursive;
+  font-size: 1.6em;
+  font-weight: 500;
+  background-color: #F4F1ED;
+}
+
+.page1 {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(85, 85, 85, 0.467), rgba(58, 59, 59, 0.84)), url(https://wallpapercave.com/wp/YbGWmpg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.content {
+  position: absolute;
+  width: 70%;
+  left: 50%;
+  top: 300px;
+  transform: translate(-50%, -50%);
+}
+
+.name {
+  color: rgb(241, 241, 241);
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.name1 {
+  color: rgb(241, 241, 241);
+  font-size: 80px;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.name2 {
+  color: rgb(241, 241, 241);
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.button {
+  display: block;
+  position: absolute;
+  width: 220px;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  padding: 15px 40px;
+  border-radius: 20px;
+  border: 0;
+  color: rgb(24, 25, 25);
+  background-color: rgb(226, 234, 234);
+}
+
+.page2 {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  margin-left: 60px;
+}
+
+.content1 {
+  display: block;
+  width: 600px;
+  margin: 180px 60px 0 0;
+}
+
+.title {
+  color: #623E2A;
+  padding-bottom: 70px;
+  font-size: 70px;
+  font-family: 'Oswald', sans-serif;
+}
+
+span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #623E2A;
+}
+
+.img {
+  margin: 180px 60px 0 120px;
+  width: 400px;
+}

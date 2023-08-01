@@ -1,0 +1,25 @@
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-color: #C71585;
+  --secondary-color: #f1e7f1;
+  --spacing: 3rem;
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6em;
+  font-weight: 500;
+}
+
+.page1 {
+  width: 100%;
+  height: 100vh;
+  background: url(http://thietkenhadepvn.pro/wp-content/uploads/2019/04/slider-resort-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8;
+}

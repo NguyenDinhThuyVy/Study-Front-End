@@ -1,0 +1,83 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
+input {
+  line-height: normal;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* using rem unit */
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  /* background-image: linear-gradient(to bottom, #b4e0f1, #e8c6dc); */
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #bde2f1, #e3cada)
+}
+
+.img1 {
+  display: block;
+  height: 100%;
+  margin-bottom: 25px;
+  overflow: hidden;
+  background-image: url(https://images.unsplash.com/photo-1615880484746-a134be9a6ecf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cmVzb3J0fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60);
+  background-size: cover;
+  opacity: 1;
+}

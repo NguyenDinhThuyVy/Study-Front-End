@@ -1,0 +1,40 @@
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-color: #C71585;
+  --secondary-color: #f1e7f1;
+  --spacing: 3rem;
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6em;
+  font-weight: 500;
+}
+
+.page1 {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(85, 85, 85, 0.467), rgba(58, 59, 59, 0.84)), url(https://wallpapercave.com/wp/YbGWmpg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.name {
+  color: antiquewhite;
+  font-size: 25px;
+  text-transform: uppercase;
+}

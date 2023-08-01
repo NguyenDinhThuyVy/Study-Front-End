@@ -1,0 +1,33 @@
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-color: #C71585;
+  --secondary-color: #DDA0DD;
+  --spacing: 3rem;
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6em;
+  font-weight: 500;
+  width: 100%;
+  height: 100vh;
+}
+
+.page1 {
+  width: 100%;
+  height: 100vh;
+  background: url(https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVzb3J0fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60 )no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.blur {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  height: 100vh;
+  width: 50%;
+}
