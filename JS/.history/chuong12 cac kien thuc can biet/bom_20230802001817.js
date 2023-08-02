@@ -20,23 +20,6 @@ params.delete("page");
 
 // 2. History
 console.log(window.history);
-// history.back(); // quay lại trang trước đó
+history.back(); // quay lại trang trước đó
 // history.forward(); // tới trang kế tiếp
 // history.go();
-
-// 3. Navigator
-console.log(navigator.userAgent);
-const deviceType = () => {
-  const ua = navigator.userAgent;
-  if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
-    return "tablet";
-  } else if (
-    /Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(
-      ua
-    )
-  ) {
-    return "mobile";
-  }
-  return "desktop";
-};
-console.log(deviceType());

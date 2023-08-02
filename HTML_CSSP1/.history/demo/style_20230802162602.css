@@ -136,33 +136,37 @@ body {
 
 .page2 {
   width: 100%;
-  display: block;
+  height: 100%;
 }
 
 .page2-content {
   display: flex;
   height: 100vh;
+  position: relative;
 }
 
 .content1 {
   display: block;
-  width: 1000px;
+  position: absolute;
+  width: 800px;
   /* padding: 150px 220px 0 60px; */
-  margin-top: 80px;
+  margin-top: 150px;
   margin-left: 60px;
   margin-right: 220px;
   /* margin-bottom: 50px; */
 }
 
 .title {
-  width: 100%;
+  position: absolute;
+  width: 90%;
   color: #623E2A;
   padding-bottom: 70px;
-  font-size: 60px;
+  font-size: 70px;
   font-family: 'Oswald', sans-serif;
 }
 
 span {
+  position: absolute;
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   color: #623E2A;
@@ -194,18 +198,6 @@ span {
   justify-content: space-between;
 }
 
-
-.page3-title {
-  text-align: center;
-  padding: 80px 0 50px;
-  color: #623E2A;
-  font-size: 60px;
-  font-family: 'Oswald', sans-serif;
-}
-
-.item-img {
-  width: 90%;
-  margin: 0 20px;
-  position: relative;
-
+.item {
+  padding-right: 20px;
 }

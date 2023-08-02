@@ -148,7 +148,7 @@ body {
   display: block;
   width: 1000px;
   /* padding: 150px 220px 0 60px; */
-  margin-top: 80px;
+  margin-top: 100px;
   margin-left: 60px;
   margin-right: 220px;
   /* margin-bottom: 50px; */
@@ -158,7 +158,7 @@ body {
   width: 100%;
   color: #623E2A;
   padding-bottom: 70px;
-  font-size: 60px;
+  font-size: 70px;
   font-family: 'Oswald', sans-serif;
 }
 
@@ -195,12 +195,9 @@ span {
 }
 
 
-.page3-title {
+.title {
   text-align: center;
-  padding: 80px 0 50px;
-  color: #623E2A;
-  font-size: 60px;
-  font-family: 'Oswald', sans-serif;
+  padding-top: 80px;
 }
 
 .item-img {
