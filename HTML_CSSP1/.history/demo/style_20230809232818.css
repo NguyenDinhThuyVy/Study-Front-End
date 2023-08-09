@@ -197,48 +197,22 @@ span {
 
 .page3-title {
   text-align: center;
-  padding: 60px 0 50px;
+  padding: 80px 0 50px;
   color: #623E2A;
   font-size: 60px;
   font-family: 'Oswald', sans-serif;
 }
 
-.item-img {
+.item-img img {
   width: 90%;
   margin: 0 20px;
   position: relative;
   border-radius: 10px;
-  box-shadow: 5px 0px 10px 5px #d2d2c2;
-}
-
-.item-img img {
-  border-radius: 10px;
-}
-
-.sale {
-  font-size: 15px;
-  padding: 5px;
-  color: rgb(2, 15, 26);
-  background-color: rgb(231, 218, 33);
-  border-radius: 5px;
-  position: absolute;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 1000;
-  align-items: center;
-  top: 0;
-  right: 0;
-  z-index: 2;
 }
 
 .item-content {
-  border: #623E2A solid 2px;
-  padding: 30px;
+  border: #623E2A solid 5px;
   width: 90%;
   margin: 0 20px;
-  margin-top: 20px;
-  border-radius: 3px;
-}
-
-.content-main {
   margin-top: 20px;
 }

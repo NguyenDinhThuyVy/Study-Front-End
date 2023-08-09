@@ -218,15 +218,16 @@ span {
 .sale {
   font-size: 15px;
   padding: 5px;
-  color: rgb(2, 15, 26);
-  background-color: rgb(231, 218, 33);
-  border-radius: 5px;
+  color: rgb(12, 33, 51);
+  background-color: rgb(231, 225, 217);
+  border-radius: 10px;
   position: absolute;
   font-family: 'Oswald', sans-serif;
   font-weight: 1000;
-  align-items: center;
   top: 0;
   right: 0;
+  width: 40px;
+  height: 50px;
   z-index: 2;
 }
 
