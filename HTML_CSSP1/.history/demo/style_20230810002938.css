@@ -203,16 +203,30 @@ span {
   font-family: 'Oswald', sans-serif;
 }
 
+.item {
+  width: 100%;
+  height: 550px;
+  position: relative;
+}
+
 .item-img {
   width: 90%;
-  margin: 0 20px;
+  margin: 0 20px 40px 20px;
   position: relative;
   border-radius: 10px;
   box-shadow: 5px 0px 10px 5px #d2d2c2;
+  cursor: pointer;
+  transition: 0.2s linear;
 }
 
 .item-img img {
   border-radius: 10px;
+}
+
+.item-img img:hover {
+  color: #623E2A;
+  width: 100%;
+  box-shadow: 5px 0px 10px 5px #afaf84;
 }
 
 .sale {
@@ -237,8 +251,27 @@ span {
   margin: 0 20px;
   margin-top: 20px;
   border-radius: 3px;
+  position: relative;
 }
 
+.contentMainButton {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+}
+
+.creatRoom {
+  border: 0;
+  width: 220px;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  border: 0;
+  color: rgb(24, 25, 25);
+  background-color: rgb(226, 234, 234);
+}
+
+
 .content-main {
+  display: flex;
   margin-top: 20px;
 }

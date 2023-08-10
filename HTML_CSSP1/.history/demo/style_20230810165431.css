@@ -1,0 +1,295 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
+input {
+  line-height: normal;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* using rem unit */
+/* html {
+  font-size: 62.5%;
+} */
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+body {
+  font-size: 16px;
+  line-height: 1;
+}
+
+body {
+  font-family: 'Borel', cursive;
+  font-size: 1.6em;
+  font-weight: 500;
+  background-color: #F4F1ED;
+  margin: 0px;
+  height: 100%;
+}
+
+.page1 {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(85, 85, 85, 0.467), rgba(58, 59, 59, 0.84)), url(https://wallpapercave.com/wp/YbGWmpg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* margin-bottom: 10px; */
+}
+
+.content {
+  position: absolute;
+  width: 70%;
+  left: 50%;
+  top: 300px;
+  transform: translate(-50%, -50%);
+}
+
+.name {
+  color: rgb(241, 241, 241);
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.name1 {
+  color: rgb(241, 241, 241);
+  font-size: 80px;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.name2 {
+  color: rgb(241, 241, 241);
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.button {
+  display: block;
+  position: absolute;
+  width: 220px;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  padding: 15px 40px;
+  border-radius: 20px;
+  border: 0;
+  color: rgb(24, 25, 25);
+  background-color: rgb(226, 234, 234);
+}
+
+
+.page2 {
+  width: 100%;
+  display: block;
+}
+
+.page2-content {
+  display: flex;
+  height: 100vh;
+}
+
+.content1 {
+  display: block;
+  width: 1000px;
+  /* padding: 150px 220px 0 60px; */
+  margin-top: 80px;
+  margin-left: 60px;
+  margin-right: 220px;
+  /* margin-bottom: 50px; */
+}
+
+.title {
+  width: 100%;
+  color: #623E2A;
+  padding-bottom: 70px;
+  font-size: 60px;
+  font-family: 'Oswald', sans-serif;
+}
+
+span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #623E2A;
+}
+
+.img {
+  padding: 80px 120px 0px 0px;
+}
+
+.img-img {
+  width: 700px;
+  height: 550px;
+  border-radius: 10px;
+  object-fit: cover;
+
+}
+
+.page3 {
+  background-color: #EFEBE5;
+  height: 100vh;
+}
+
+.page3-content {
+  /* height: 100vh; */
+  background-color: #EFEBE5;
+  display: flex;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.page3-title {
+  text-align: center;
+  padding: 60px 0 50px;
+  color: #623E2A;
+  font-size: 60px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.item {
+  width: 100%;
+  height: 550px;
+  position: relative;
+}
+
+.item-img {
+  width: 90%;
+  margin: 0 20px 40px 20px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 5px 0px 10px 5px #d2d2c2;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.item-img img {
+  border-radius: 10px;
+}
+
+.item-img img:hover {
+  color: #623E2A;
+  width: 100%;
+  box-shadow: 5px 0px 10px 5px #afaf84;
+}
+
+.sale {
+  font-size: 15px;
+  padding: 5px;
+  color: rgb(2, 15, 26);
+  background-color: rgb(231, 218, 33);
+  border-radius: 5px;
+  position: absolute;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 1000;
+  align-items: center;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.item-content {
+  border: #623E2A solid 2px;
+  padding: 30px;
+  width: 90%;
+  margin: 0 20px;
+  margin-top: 20px;
+  border-radius: 3px;
+  position: relative;
+}
+
+.contentMainButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.creatRoom {
+  border: 0;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px 0px 0px 10px;
+  border: 0;
+  color: rgb(24, 25, 25);
+  background-image: linear-gradient(to bottom, #bde2f1, #e3cada);
+  box-shadow: 2px 5px 2px 0px #d1e2f372;
+  font-weight: 900;
+  z-index: 2;
+}
+
+.creatRoom:hover {
+  background-image: linear-gradient(to bottom, #aadeb8, #aadeb8);
+}
+
+
+.content-main {
+  display: flex;
+  margin-top: 20px;
+}
+
+.page4 {
+  background-color: #F4F1ED;
+  height: 100vh;
+  display: flex;
+}
+
+.page4LeftContent {
+  width: 6%;
+}
