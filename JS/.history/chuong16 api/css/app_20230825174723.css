@@ -146,6 +146,6 @@ body {
   display: none;
 }
 
-.joke.is-loading .joke-button .loader {
+.joke.is-loading .joke-button loader {
   display: inline-block;
 }

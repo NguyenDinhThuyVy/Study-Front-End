@@ -96,39 +96,34 @@ body {
 
 .joke-button {
   width: 200px;
-  height: 50px;
   border: 0;
   display: block;
   outline: none;
-  padding: 15px 30px;
+  padding: 10px 30px;
   border-radius: 8px;
   background-color: #aafc93;
   justify-content: center;
   align-items: center;
-  position: relative;
 
 }
 
 .loader {
-  width: 20px;
-  position: absolute;
-  top: 25%;
-  left: 48%;
-  transform: translate(-80%, -50%);
-  height: 10px;
-  /* position: absolute; */
-  display: none;
+  /* display: inline-block; */
+  width: 40px;
+  height: 40px;
+  padding: 20px;
 }
 
 .loader:after {
   content: " ";
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 50px;
+  margin: 8px;
   border-radius: 50%;
-  border: 5px solid #fff;
+  border: 6px solid #fff;
   border-color: #fff transparent #fff transparent;
-  animation: loader 1.2s linear infinite;
+  animation: lds-dual-ring 1.2s linear infinite;
 }
 
 @keyframes loader {
@@ -139,13 +134,4 @@ body {
   100% {
     transform: rotate(360deg);
   }
-}
-
-
-.joke.is-loading .joke-button span {
-  display: none;
-}
-
-.joke.is-loading .joke-button .loader {
-  display: inline-block;
 }

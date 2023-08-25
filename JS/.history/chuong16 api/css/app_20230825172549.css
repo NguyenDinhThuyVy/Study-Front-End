@@ -113,11 +113,10 @@ body {
   width: 20px;
   position: absolute;
   top: 25%;
-  left: 48%;
+  left: 45%;
   transform: translate(-80%, -50%);
   height: 10px;
   /* position: absolute; */
-  display: none;
 }
 
 .loader:after {
@@ -139,13 +138,4 @@ body {
   100% {
     transform: rotate(360deg);
   }
-}
-
-
-.joke.is-loading .joke-button span {
-  display: none;
-}
-
-.joke.is-loading .joke-button .loader {
-  display: inline-block;
 }

@@ -47,7 +47,6 @@ img {
 /* using rem unit */
 html {
   font-size: 62.5%;
-  height: 100%;
 }
 
 a {
@@ -69,13 +68,12 @@ body {
 }
 
 body {
-  height: 100%;
-  background-image: linear-gradient(to bottom, #bde2f1, #e3cada);
-  background-size: cover;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #bde2f1, #e3cada)
 }
 
 .joke {
-  height: 500px;
+  margin: auto 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -95,57 +93,11 @@ body {
 }
 
 .joke-button {
-  width: 200px;
-  height: 50px;
   border: 0;
   display: block;
   outline: none;
-  padding: 15px 30px;
+  padding: 10px 30px;
   border-radius: 8px;
   background-color: #aafc93;
-  justify-content: center;
-  align-items: center;
-  position: relative;
 
-}
-
-.loader {
-  width: 20px;
-  position: absolute;
-  top: 25%;
-  left: 48%;
-  transform: translate(-80%, -50%);
-  height: 10px;
-  /* position: absolute; */
-  display: none;
-}
-
-.loader:after {
-  content: " ";
-  display: block;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 5px solid #fff;
-  border-color: #fff transparent #fff transparent;
-  animation: loader 1.2s linear infinite;
-}
-
-@keyframes loader {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-
-.joke.is-loading .joke-button span {
-  display: none;
-}
-
-.joke.is-loading .joke-button .loader {
-  display: inline-block;
 }

@@ -113,11 +113,10 @@ body {
   width: 20px;
   position: absolute;
   top: 25%;
-  left: 48%;
+  left: 50%;
   transform: translate(-80%, -50%);
   height: 10px;
   /* position: absolute; */
-  display: none;
 }
 
 .loader:after {
@@ -128,7 +127,7 @@ body {
   border-radius: 50%;
   border: 5px solid #fff;
   border-color: #fff transparent #fff transparent;
-  animation: loader 1.2s linear infinite;
+  /* animation: loader 1.2s linear infinite; */
 }
 
 @keyframes loader {
@@ -141,11 +140,6 @@ body {
   }
 }
 
-
 .joke.is-loading .joke-button span {
   display: none;
-}
-
-.joke.is-loading .joke-button .loader {
-  display: inline-block;
 }

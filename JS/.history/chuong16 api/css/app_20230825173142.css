@@ -141,11 +141,10 @@ body {
   }
 }
 
-
 .joke.is-loading .joke-button span {
   display: none;
 }
 
 .joke.is-loading .joke-button .loader {
-  display: inline-block;
+  display: none;
 }
