@@ -158,8 +158,8 @@ body {
 }
 
 .imageItem {
-  padding: 15px;
+  padding: 20px;
   background-color: rgba(237, 241, 246, 0.585);
   border-radius: 10px;
-  border: rgb(203, 205, 205) solid 1px;
+  border: rgb(96, 115, 117) solid 1px;
 }

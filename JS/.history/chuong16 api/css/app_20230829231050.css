@@ -71,7 +71,7 @@ body {
 body {
   height: 100%;
   background-image: linear-gradient(to bottom, #bde2f1, #e3cada);
-  background-size: over;
+  background-size: cover;
 }
 
 .joke {
@@ -155,11 +155,5 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 25px;
-}
-
-.imageItem {
-  padding: 15px;
-  background-color: rgba(237, 241, 246, 0.585);
-  border-radius: 10px;
-  border: rgb(203, 205, 205) solid 1px;
+  border-radius: 5px;
 }
