@@ -1,11 +1,7 @@
 // https://picsum.photos/v2/list
-let page = 1;
-const limit = 10;
-const endpoint = `https://picsum.photos/v2/list?limit=${limit}`;
+const endpoint = `https://picsum.photos/v2/list?limit=8`;
 const imageList = document.querySelector(".images");
 const loadmore = document.querySelector(".loadMore");
-const loading = document.querySelector(".imageLoader");
-loadmore.style.display = "none";
 {
   /* <div class="image-item">
         <img src="https://source.unsplash.com/random" alt="" />
@@ -17,14 +13,11 @@ function imageTemplate(url) {
 </div>`;
   imageList.insertAdjacentHTML("beforeend", template);
 }
-async function fetchImages(page = 1) {
-  loading.style.display = "block";
-  loadmore.style.display = "none";
-  const response = await fetch(`${endpoint}&page=${page}`);
-  const images = await response.json();
+async function fetchImage() {
+  const respone = await fetch(endpoint);
+  const images = await respone.json();
+  console.log(images);
   if (images.length > 0 && Array.isArray(images)) {
-    loading.style.display = "none";
-    loadmore.style.display = "block";
     images.forEach((item) => {
       imageTemplate(item.download_url);
     });
@@ -35,4 +28,4 @@ async function handleLoadMore() {
   await fetchImages(page);
 }
 loadmore.addEventListener("click", handleLoadMore);
-fetchImages();
+fetchImage();

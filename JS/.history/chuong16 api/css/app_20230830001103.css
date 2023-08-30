@@ -192,7 +192,6 @@ body {
   height: 50px;
   border: 5px solid #339442;
   border-right: 5px solid transparent;
-  border-radius: 50%;
 }
 
 @keyframes spin {

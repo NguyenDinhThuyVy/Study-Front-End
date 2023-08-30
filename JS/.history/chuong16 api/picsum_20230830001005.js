@@ -35,4 +35,4 @@ async function handleLoadMore() {
   await fetchImages(page);
 }
 loadmore.addEventListener("click", handleLoadMore);
-fetchImages();
+fetchImage();

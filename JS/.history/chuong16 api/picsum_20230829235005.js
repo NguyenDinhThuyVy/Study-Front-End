@@ -1,11 +1,10 @@
 // https://picsum.photos/v2/list
+loadmore.style.display = "none";
 let page = 1;
 const limit = 10;
 const endpoint = `https://picsum.photos/v2/list?limit=${limit}`;
 const imageList = document.querySelector(".images");
 const loadmore = document.querySelector(".loadMore");
-const loading = document.querySelector(".imageLoader");
-loadmore.style.display = "none";
 {
   /* <div class="image-item">
         <img src="https://source.unsplash.com/random" alt="" />
@@ -35,4 +34,4 @@ async function handleLoadMore() {
   await fetchImages(page);
 }
 loadmore.addEventListener("click", handleLoadMore);
-fetchImages();
+fetchImage();

@@ -19,12 +19,12 @@ function imageTemplate(url) {
 }
 async function fetchImages(page = 1) {
   loading.style.display = "block";
-  loadmore.style.display = "none";
+  // loadmore.style.display = "none";
   const response = await fetch(`${endpoint}&page=${page}`);
   const images = await response.json();
   if (images.length > 0 && Array.isArray(images)) {
     loading.style.display = "none";
-    loadmore.style.display = "block";
+    // loadmore.style.display = "block";
     images.forEach((item) => {
       imageTemplate(item.download_url);
     });
@@ -35,4 +35,4 @@ async function handleLoadMore() {
   await fetchImages(page);
 }
 loadmore.addEventListener("click", handleLoadMore);
-fetchImages();
+fetchImage();

@@ -177,26 +177,6 @@ body {
   padding: 15px 30px;
   border-radius: 4px;
   color: white;
-  background-color: #b97070;
-  border: 0;
-  margin: 25px auto;
-}
+  background-color: #db9d9d;
 
-.imageLoader {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: spin 1.2s linear infinite forwards;
-  width: 50px;
-  height: 50px;
-  border: 5px solid #339442;
-  border-right: 5px solid transparent;
-  border-radius: 50%;
-}
-
-@keyframes spin {
-  to {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
 }
